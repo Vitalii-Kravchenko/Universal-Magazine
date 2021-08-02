@@ -1,0 +1,214 @@
+.modal
+  &__overlay
+    visibility: hidden
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #282F36
+    opacity: 0
+    z-index: 100
+    &--visible
+      visibility: visible
+      opacity: 0.8
+      transition: visibility 1.3s ease, opacity 1.3s ease
+    &--hidden
+      transition: visibility 1.3s ease, opacity 1.3s ease
+  &__dialog
+    visibility: hidden
+    padding: 30px 35px 40px 35px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -150vh)
+    height: 530px
+    z-index: 101
+    display: flex
+    flex-direction: column
+    width: 360px
+    background-color: $light-text-color
+    border-radius: 10px
+    overflow: auto
+    &--visible
+      visibility: visible
+      transform: translate(-50%, -50%)
+      transition: transform 1.3s ease, visibility 1.3s ease
+    &--hidden
+      transition: transform 1.3s ease, visibility 1.3s ease
+  &__close
+    position: absolute
+    top: 17px
+    right: 17px
+    width: 16px
+    height: 16px
+    cursor: pointer
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: -3px
+      left: 7px
+      width: 2px
+      height: 22px
+      border-radius: 1px
+      background-color: #BCBFC2
+      transform: rotate(45deg)
+      transition: all 0.5s ease
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: -3px
+      left: 7px
+      width: 2px
+      height: 22px
+      border-radius: 1px
+      background-color: #BCBFC2
+      transform: rotate(-45deg)
+      transition: all 0.5s ease
+    &--hidden
+      &::before
+        transform: rotate(90deg)
+      &::after
+        transform: rotate(-90deg)
+  &__title
+    margin: 0
+    +Roboto-Slab(bold, normal, 20px, 25px)
+    color: $darken-text-color
+  &-theme
+    position: relative
+    margin-top: 26px
+    &__title
+      margin: 0
+      +Lato(normal, normal, 14px, 20px)
+      color: $darken-text-color
+    &__select
+      margin: 4px 0 0 0
+      padding: 10px 10px 8px 14px
+      position: relative
+      width: 100%
+      cursor: pointer
+      border-radius: 5px
+      appearance: none
+      border: 1px solid #939699
+      outline: none
+      +Lato(normal, normal, 14px, 20px)
+      color: #939699
+      z-index: 105
+    &__arrow
+      position: absolute
+      top: 42px
+      right: 15px
+      width: 9px
+      height: 5px
+    &__item
+      position: absolute
+      top: 25px
+      border: none
+  &-message
+    margin-top: 16px
+    position: relative
+    &__title
+      margin: 0
+      +Lato(normal, normal, 14px, 20px)
+      color: $darken-text-color
+    &__item
+      position: relative
+      margin-top: 4px
+      padding: 10px
+      width: 100%
+      min-height: 120px
+      +Lato(normal, normal, 14px, 20px)
+      color: $darken-text-color
+      border: 1px solid #D9DADB
+      resize: none
+      border-radius: 5px
+      outline: none
+      z-index: 105
+  &-email
+    margin-top: 12px
+    position: relative
+    &__title
+      margin: 0
+      +Lato(normal, normal, 14px, 20px)
+      color: $darken-text-color
+    &__input
+      position: relative
+      margin-top: 4px
+      margin-bottom: 15px
+      padding: 9px
+      width: 100%
+      +Lato(normal, normal, 14px, 20px)
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      outline: none
+      z-index: 105
+  &-checkbox
+    margin-bottom: 30px
+    position: relative
+    display: flex
+    flex-wrap: wrap-reverse
+    align-items: center
+    height: 20px
+    &__input
+      &--hidden
+        visibility: hidden
+        width: 0
+        height: 0
+    &__label
+      position: relative
+      display: inline-block
+      width: 20px
+      height: 20px
+      border-radius: 3px
+      background-color: $active-color
+      user-select: none
+      cursor: pointer
+      transition: background-color 0.2s ease
+      &--active
+        &::before
+          content: ''
+          position: absolute
+          display: block
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          background-image: url('../img/modal/checkbox.png')
+          background-repeat: no-repeat
+          width: 14px
+          height: 14px
+          opacity: 1
+          transition: opacity 0.2s ease
+          z-index: 150
+    &__text
+      margin-top: 2px
+      margin-left: 10px
+      +Lato(normal, normal, 14px, 14px)
+      color: $darken-text-color
+
+#theme-error, #message-error, #email-error, #checkbox-error
+  padding: 9px 10px 3px 10px
+  position: absolute
+  top: 0
+  left: 0
+  background-color: $active-color
+  color: $light-text-color
+  border-radius: 5px
+  z-index: 104
+  width: 100%
+  +Lato(normal, normal, 9px, 9px)
+
+#theme-error
+  top: 59px
+
+#message-error
+  top: 139px
+
+#email-error
+  top: 57px
+
+#checkbox-error
+  padding: 5px 10px 4px 10px
+  top: 24px
+  z-index: 150

@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+    <link
       rel="apple-touch-icon"
       sizes="57x57"
       href="img/favicon/apple-icon-57x57.png"
@@ -84,7 +90,158 @@
     <title>Universal Magazine</title>
   </head>
   <body>
+    <header class="navbar">
+      <div class="container navbar__container">
+        <nav class="nav navbar__nav">
+          <a class="navbar__logo" href="./index.html">
+            <img
+              class="navbar__logo-img"
+              src="img/main/header/nav/navbar-logo.svg"
+              alt="Logo"
+            />
+          </a>
+          <ul class="nav-list navbar-list">
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="articles"
+                >Статьи</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="news"
+                >Новости</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="hot-news"
+                >Горячее</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >HTML</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >CSS</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >JavaScript</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >Web Design</a
+              >
+            </li>
+          </ul>
+          <button class="navbar__button" data-open="modal">
+            Оставить заявку
+          </button>
+        </nav>
+        <!-- /.nav navbar__nav -->
+        <div class="navbar__hero"></div>
+        <!-- /.navbar__hero -->
+      </div>
+      <!-- /.container container__navbar -->
+    </header>
+    <!-- /.navbar -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <div class="modal__close" data-close="modal"></div>
+        <h3 class="modal__title">Обратная связь</h3>
+        <form class="modal__form" action="send.php" method="POST">
+          <div class="modal-theme">
+            <h4 class="modal-theme__title">Тема</h4>
+            <select class="modal-theme__select" name="theme" required>
+              <option class="modal-theme__item" disabled selected>
+                Выберите тему
+              </option>
+              <option class="modal-theme__item">Статьи</option>
+              <option class="modal-theme__item">Новости</option>
+              <option class="modal-theme__item">Горячее</option>
+              <option class="modal-theme__item">HTML</option>
+              <option class="modal-theme__item">CSS</option>
+              <option class="modal-theme__item">JavaScript</option>
+              <option class="modal-theme__item">Web Design</option>
+            </select>
+            <img
+              class="modal-theme__arrow"
+              src="img/modal/arrow.png"
+              alt="Arrow"
+            />
+          </div>
+          <!-- /.modal-theme -->
+          <div class="modal-message">
+            <h4 class="modal-message__title">Сообщение</h4>
+            <textarea
+              class="modal-message__item"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <!-- /.modal-message -->
+          <div class="modal-email">
+            <h4 class="modal-email__title">Email</h4>
+            <input
+              class="modal-email__input"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <!-- /.modal-email -->
+          <div class="modal-checkbox">
+            <input
+              class="modal-checkbox__input modal-checkbox__input--hidden"
+              id="modal-checkbox__input"
+              type="checkbox"
+              name="checkbox"
+              required
+            />
+            <label
+              class="modal-checkbox__label"
+              id="modal-checkbox__label"
+              for="modal-checkbox__input"
+            ></label>
+            <span class="modal-checkbox__text"
+              >Согласен с обработкой данных</span
+            >
+          </div>
+          <!-- /.modal-checkbox -->
+          <button class="button modal__send">Отправить</button>
+        </form>
+        <!-- /.modal__form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -4,6 +4,35 @@
 img
   width: 100%
 
+::-webkit-scrollbar
+  width: 6px
+  background-color: #F5FAFE
+  border-radius: 3px
+
+::-webkit-scrollbar-thumb
+  background-color: lighten($active-color, 10%)
+  border-radius: 3px
+
 .container
   margin: 0 auto
   max-width: 1140px
+
+.nav-list
+  margin: 0
+  padding: 0
+  list-style: none
+  &__link
+    +Lato(normal, normal, 14px, 20px)
+    text-decoration: none
+    color: $light-text-color
+    transition: color 0.2s ease
+
+.button
+  padding: 11px 25px 9px 26px
+  background-color: $active-color
+  border-radius: 20px
+  border: none
+  +Lato(normal, normal, 14px, 20px)
+  color: $light-text-color
+  cursor: pointer
+  transition: background-color 0.2s ease

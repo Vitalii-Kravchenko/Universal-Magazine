@@ -1,0 +1,68 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 950px
+
+  .navbar
+    &__button
+      padding: 8px 15px 7px 15px
+      min-width: 180px
+    &__logo
+      width: 130px
+      height: 31.9px
+      &-img
+        width: 130px
+        height: 31.9px
+
+@media ( max-width: 992px )
+  .container
+    max-width: 720px
+
+  .navbar
+    &-list
+      display: none
+    &__button
+      display: none
+
+@media ( max-width: 768px )
+  .container
+    max-width: 90%
+
+  .navbar
+    &__logo
+      width: 110px
+      height: 26.99px
+      &-img
+        width: 110px
+        height: 26.99px
+
+@media ( max-width: 480px )
+  .modal
+    &__dialog
+      max-width: 90%
+
+@media ( min-width: 992px )
+  .button
+    &:hover
+      background-color: lighten($active-color, 15%)
+  // Main Page
+
+  // Header
+  .navbar
+    &__button
+      &:hover
+        background-color: $active-color
+    &-list
+      &__link
+        &:hover
+          color: $active-color
+
+  .modal
+    &-checkbox
+      &__label
+        &:hover
+          background-color: lighten($active-color, 15%)
+
+@media ( max-height: 576px )
+  .modal
+    &__dialog
+      max-height: 90vh

@@ -1,0 +1,33 @@
+.navbar
+  background-color: $dark-background
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 70px
+  &__logo
+    width: 163px
+    height: 40px
+    &-img
+      width: 163px
+      height: 40px
+  &-list
+    display: flex
+    flex-wrap: wrap
+    &__item
+      margin: 0 30px 0 0
+      color: $light-text-color
+      &:last-child
+        margin: 0
+  &__button
+    padding: 10px 15px 9px 15px
+    min-width: 261px
+    color: $light-text-color
+    border: none
+    background-color: #656b70
+    border-radius: 10px
+    text-transform: uppercase
+    +Lato(normal, normal, 14px, 20px)
+    cursor: pointer
+    transition: background-color 0.2s ease
+    outline: none
