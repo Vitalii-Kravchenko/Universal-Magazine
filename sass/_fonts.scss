@@ -1,0 +1,49 @@
+// Lato
+
+@font-face {
+      font-family: 'Lato';
+      src: url('../fonts/Lato/Regular/Lato-Regular.woff2') format('woff2'),
+            url('../fonts/Lato/Regular/Lato-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Lato';
+      src: url('../fonts/Lato/black/Lato-Black.woff2') format('woff2'),
+            url('../fonts/Lato/black/Lato-Black.woff') format('woff');
+      font-weight: black;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Lato';
+      src: url('../fonts/Lato/heavy/Lato-Heavy.woff2') format('woff2'),
+            url('../fonts/Lato/heavy/Lato-Heavy.woff') format('woff');
+      font-weight: heavy;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Lato';
+      src: url('../fonts/Lato/Heavy-Italic/Lato-HeavyItalic.woff2') format('woff2'),
+            url('../fonts/Lato/Heavy-Italic/Lato-HeavyItalic.woff') format('woff');
+      font-weight: heavy;
+      font-style: italic;
+      font-display: swap;
+}
+
+
+// Roboto Slab
+
+@font-face {
+      font-family: 'Roboto Slab';
+      src: url('../fonts/Roboto-Slab/Bold/RobotoSlab-Bold.woff2') format('woff2'),
+            url('../fonts/Roboto-Slab/Bold/RobotoSlab-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+}
