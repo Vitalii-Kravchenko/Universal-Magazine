@@ -363,7 +363,7 @@ template {
 
 @font-face {
   font-family: 'Lato';
-  src: url("Lato-HeavyItalic.woff2") format("woff2"), url("Lato-HeavyItalic.woff") format("woff");
+  src: url("../fonts/Lato/Heavy-Italic/Lato-HeavyItalic.woff2") format("woff2"), url("../fonts/Lato/Heavy-Italic/Lato-HeavyItalic.woff") format("woff");
   font-weight: heavy;
   font-style: italic;
   font-display: swap;
@@ -371,7 +371,7 @@ template {
 
 @font-face {
   font-family: 'Roboto Slab';
-  src: url("RobotoSlab-Bold.woff2") format("woff2"), url("RobotoSlab-Bold.woff") format("woff");
+  src: url("../fonts/Roboto-Slab/Bold/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/Roboto-Slab/Bold/RobotoSlab-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -383,5 +383,10 @@ template {
 
 img {
   width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
 }
 /*# sourceMappingURL=style.css.map */
