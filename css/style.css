@@ -973,7 +973,7 @@ img {
   right: 0;
   background-color: #282F36;
   opacity: 0;
-  z-index: 100;
+  z-index: 165;
 }
 
 .modal__overlay--visible {
