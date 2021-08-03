@@ -1227,6 +1227,9 @@ img {
   .navbar__hero {
     max-width: 950px;
   }
+  .tabs-utp__category {
+    margin-top: 40px;
+  }
   .tabs-item {
     width: 100%;
   }
@@ -1265,7 +1268,7 @@ img {
     flex-direction: column;
   }
   .tabs-utp__title {
-    max-width: 500px;
+    max-width: 634px;
   }
   .tabs-item {
     justify-content: flex-end;
@@ -1319,7 +1322,7 @@ img {
   }
   .tabs-utp__title {
     margin: 0 0 25px 0;
-    max-width: 400px;
+    max-width: 100%;
     font-size: 28px;
     line-height: 35px;
   }
@@ -1354,7 +1357,7 @@ img {
     margin: 0 0 15px 0;
     font-size: 19px;
     line-height: 22px;
-    max-width: 300px;
+    max-width: 100%;
   }
   .tabs-utp__category {
     font-size: 10px;
