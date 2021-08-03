@@ -1254,7 +1254,7 @@ img {
     max-width: 950px;
   }
   .navbar__button {
-    padding: 13px 25px 10px 25px;
+    padding: 8px 25px 6px 25px;
     min-width: 180px;
   }
   .navbar__logo {
@@ -1297,6 +1297,7 @@ img {
     font-size: 17px;
   }
   .navbar__button {
+    padding: 13px 25px 10px 25px;
     display: none;
     font-size: 12px;
   }
