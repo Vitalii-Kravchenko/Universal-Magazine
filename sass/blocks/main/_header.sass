@@ -85,22 +85,45 @@
     min-height: 570px
     border-radius: 10px
     overflow: hidden
-    background-color: $light-text-color
+    background-color: transparent
 
 .tabs
   display: flex
   width: 100%
   min-height: 570px
+  background-color: $light-text-color
   &-item
+    display: none
+    visibility: hidden
     padding: 55px 55px 100px 55px
     width: 877px
-    display: flex
     flex-direction: column
     justify-content: space-between
-    background-image: url('../img/main/header/hero/David-Gurov-article.jpg')
     background-repeat: no-repeat
     object-fit: cover
     background-size: cover
+    &:nth-child(1)
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main/header/hero/css-one.jpg'), no-repeat
+      background-size: cover
+    &:nth-child(2)
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main/header/hero/java-script.jpg')
+      background-size: cover
+    &:nth-child(3)
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main/header/hero/html.jpg')
+      background-size: cover
+    &:nth-child(4)
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main/header/hero/web-design.jpg')
+      background-size: cover
+    &:nth-child(5)
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main/header/hero/css-two.jpg')
+      background-size: cover
+    &--visible
+      display: flex
+      visibility: visible
+      animation: tabsVisible
+      animation-duration: 0.5s
+      animation-fill-mode: forwards
+      border-radius: 10px 0 0 10px
     &__img
       margin-right: 10px
       width: 45px
@@ -152,6 +175,7 @@
         width: 15px
         height: 7px
   &-button
+    background-color: $light-text-color
     max-width: 263px
     &__recomendation
       padding: 23px 25px 21px 25px
@@ -189,6 +213,8 @@
         &::after
           width: 0
           height: 0
+      &--active
+        background-color: #F5F5F5
     &__title
       margin: 0
       +Lato(12px)
@@ -306,3 +332,13 @@
     transform: translateY(3px) rotate(0deg)
   100%
     transform: translateY(12px)
+
+@keyframes tabsVisible
+  0%
+    display: none
+    visibility: hidden
+    opacity: 0
+  100%
+    display: flex
+    visibility: visible
+    opacity: 1
