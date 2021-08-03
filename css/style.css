@@ -923,6 +923,37 @@ img {
   }
 }
 
+.thanks {
+  background-color: #edeff0;
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+.thanks__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.thanks__title {
+  margin: 0 0 20px 0;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 24px;
+  color: #262D33;
+}
+
+.thanks__description {
+  margin: 0 0 20px 0;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 16px;
+  color: #262D33;
+}
+
+.thanks__button {
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+}
+
 .articles-livehack {
   background-color: #edeff0;
   width: 100%;
