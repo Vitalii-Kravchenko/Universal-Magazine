@@ -606,7 +606,6 @@ img {
   animation: tabsVisible;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  border-radius: 10px 0 0 10px;
 }
 
 .tabs-item--hidden {
@@ -1225,6 +1224,15 @@ img {
     width: 130px;
     height: 31.9px;
   }
+  .navbar__hero {
+    max-width: 950px;
+  }
+  .tabs-item {
+    width: 100%;
+  }
+  .tabs-item--visible {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1250,8 +1258,36 @@ img {
   .navbar-burger {
     display: block;
   }
+  .navbar__hero {
+    max-width: 720px;
+  }
+  .tabs {
+    flex-direction: column;
+  }
+  .tabs-utp__title {
+    max-width: 500px;
+  }
+  .tabs-item {
+    justify-content: flex-end;
+    padding: 33px 43px 33px 43px;
+    height: 424px;
+  }
+  .tabs-item--visible {
+    padding: 33px 43px 33px 43px;
+    height: 424px;
+  }
+  .tabs-button {
+    max-width: 720px;
+  }
+  .tabs-button__item:nth-child(4) {
+    display: none;
+  }
+  .tabs-button__item:nth-child(5) {
+    display: none;
+  }
   .burger-modal {
     display: block;
+    z-index: 160;
   }
 }
 
@@ -1267,11 +1303,65 @@ img {
     width: 110px;
     height: 26.99px;
   }
+  .navbar__hero {
+    max-width: 90%;
+  }
+  .tabs-item {
+    padding: 30px 55px 30px 30px;
+    height: 290px;
+  }
+  .tabs-item--visible {
+    padding: 30px 55px 30px 30px;
+    height: 290px;
+  }
+  .tabs-item__user {
+    display: none;
+  }
+  .tabs-utp__title {
+    margin: 0 0 25px 0;
+    max-width: 400px;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .tabs-utp__button::after {
+    top: 15px;
+    right: 19px;
+  }
+  .tabs-button__recomendation-title {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
+  .navbar__hero {
+    min-height: auto;
+  }
   .modal__dialog {
     max-width: 90%;
+  }
+  .tabs {
+    min-height: auto;
+  }
+  .tabs-item {
+    padding: 20px 18px 20px 18px;
+    height: 200px;
+  }
+  .tabs-item--visible {
+    padding: 20px 18px 20px 18px;
+    height: 200px;
+  }
+  .tabs-utp__title {
+    margin: 0 0 15px 0;
+    font-size: 19px;
+    line-height: 22px;
+    max-width: 300px;
+  }
+  .tabs-utp__category {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+  .tabs-utp__button {
+    font-size: 11px;
   }
 }
 
