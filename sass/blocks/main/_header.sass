@@ -31,3 +31,149 @@
     cursor: pointer
     transition: background-color 0.2s ease
     outline: none
+  &-burger
+    display: none
+    width: 26px
+    height: 21px
+    cursor: pointer
+    &__item
+      width: 26px
+      height: 3px
+      border-radius: 1.5px
+      background-color: $light-text-color
+      display: block
+      &:nth-child(1)
+        transform: translateY(0px)
+      &:nth-child(2)
+        transform: translateY(6px)
+      &:nth-child(3)
+        transform: translateY(12px)
+      &--active
+        &:nth-child(1)
+          animation: openBurgerFirst
+          animation-duration: 1s
+          animation-fill-mode: forwards
+        &:nth-child(2)
+          animation: openBurgerSecond
+          animation-duration: 1s
+          animation-fill-mode: forwards
+        &:nth-child(3)
+          animation: openBurgerThird
+          animation-duration: 1s
+          animation-fill-mode: forwards
+      &--hidden
+        &:nth-child(1)
+          animation: closeBurgerFirst
+          animation-duration: 1s
+          animation-fill-mode: forwards
+        &:nth-child(2)
+          animation: closeBurgerSecond
+          animation-duration: 1s
+          animation-fill-mode: forwards
+        &:nth-child(3)
+          animation: closeBurgerThird
+          animation-duration: 1s
+          animation-fill-mode: forwards
+
+.burger-modal
+  position: fixed
+  top: 70px
+  bottom: 0
+  left: 0
+  right: 0
+  transform: translateX(150vh)
+  display: block
+  visibility: hidden
+  background-color: #282F36
+  &--visible
+    transform: translateX(0)
+    visibility: visible
+    transition: visibility 0.5s ease, transform 0.5s ease
+  &--hidden
+    transform: translateX(150vh)
+    visibility: hidden
+    transition: visibility 0.5s ease, transform 0.5s ease
+  &__wrapper
+    padding-top: 30px
+    display: block
+    height: 340px
+
+.section
+  height: 1000px
+  background-color: red
+
+.footer
+  height: 1000px
+  background-color: pink
+
+.navbar
+  &-list
+    &--visible
+      display: flex !important
+      flex-direction: column
+      align-items: center
+      transition: all 0.5s ease
+      text-align: center
+  &__button
+    &--visible
+      margin: 20px auto 0 auto
+      display: block !important
+      transition: all 0.5s ease
+
+@keyframes openBurgerFirst
+  0%
+    transform: translateY(0px)
+  50%
+    transform: translateY(9px) rotate(0deg)
+  100%
+    transform: translateY(9px) rotate(-45deg)
+
+@keyframes openBurgerSecond
+  0%
+    transform: translateY(6px)
+  50%
+    opacity: 1
+  51%
+    opacity: 0
+    visibility: hidden
+  100%
+    opacity: 0
+    visibility: hidden
+    transform: translateY(6px)
+
+@keyframes openBurgerThird
+  0%
+    transform: translateY(12px)
+  50%
+    transform: translateY(3px) rotate(0deg)
+  100%
+    transform: translateY(3px) rotate(45deg)
+
+@keyframes closeBurgerFirst
+  0%
+    transform: translateY(9px) rotate(-45deg)
+  50%
+    transform: translateY(9px) rotate(0deg)
+  100%
+    transform: translateY(0px)
+
+@keyframes closeBurgerSecond
+  0%
+    opacity: 0
+    visibility: hidden
+    transform: translateY(6px)
+  50%
+    opacity: 0
+    visibility: hidden
+  51%
+    opacity: 1
+  100%
+    transform: translateY(6px)
+
+@keyframes closeBurgerThird
+  0%
+    transform: translateY(3px) rotate(45deg)
+  50%
+    transform: translateY(3px) rotate(0deg)
+  100%
+    transform: translateY(12px)

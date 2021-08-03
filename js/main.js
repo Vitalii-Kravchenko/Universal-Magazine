@@ -8,8 +8,17 @@ $(document).ready(function () {
   }
 
   $('.navbar-list__link').on('click', function (e) {
-    e.preventDefault();
-    scrollTo($(this).attr('data-scroll'));
+    if ($('.navbar-burger').attr('data-burger') == 'close') {
+      burgerClose();
+      setTimeout(function () {
+        e.preventDefault();
+        scrollTo($(e.target).attr('data-scroll'));
+      }, 1000);
+    } else if ($('.navbar-burger').attr('data-burger') == 'open') {
+      e.preventDefault();
+      scrollTo($(e.target).attr('data-scroll'));
+    }
+
   });
 
   // Modal
@@ -91,4 +100,71 @@ $(document).ready(function () {
       $('.modal__send').removeAttr("disabled");
     }, 5000);
   });
+
+
+  // Burger
+  $('.navbar-burger').on('click', function () {
+    if ($(this).attr('data-burger') == 'open') {
+      burgerOpen();
+    } else if ($(this).attr('data-burger') == 'close') {
+      burgerClose();
+    }
+  });
+
+  function burgerOpen() {
+    if ($('body').css("overflow") == "hidden") {
+      $('body').css({
+        "overflow": "auto"
+      });
+    } else {
+      $('body').css({
+        "overflow": "hidden"
+      });
+    }
+
+    // 
+
+
+    $('.navbar-burger__item').addClass('navbar-burger__item--active');
+
+    $('.navbar-burger__item').removeClass('navbar-burger__item--hidden');
+
+    // 
+
+    $('.burger-modal').addClass('burger-modal--visible');
+    $('.burger-modal').removeClass('burger-modal--hidden');
+
+    // 
+
+    $('.navbar-burger').attr('data-burger', 'close');
+  }
+
+  function burgerClose() {
+    if ($('body').css("overflow") == "hidden") {
+      $('body').css({
+        "overflow": "auto"
+      });
+    } else {
+      $('body').css({
+        "overflow": "hidden"
+      });
+    }
+
+    // 
+
+    $('.navbar-burger__item').removeClass('navbar-burger__item--active');
+
+    $('.navbar-burger__item').addClass('navbar-burger__item--hidden');
+
+    // 
+
+    setTimeout(function () {
+      $('.burger-modal').removeClass('burger-modal--visible');
+      $('.burger-modal').addClass('burger-modal--hidden');
+    }, 500);
+
+    // 
+
+    $('.navbar-burger').attr('data-burger', 'open');
+  }
 });

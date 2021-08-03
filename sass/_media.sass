@@ -20,8 +20,17 @@
   .navbar
     &-list
       display: none
+      &__item
+        margin: 6px auto
+        &:last-child
+          margin: 6px auto
+      &__link
+        font-size: 17px
     &__button
       display: none
+      font-size: 12px
+    &-burger
+      display: block
 
 @media ( max-width: 768px )
   .container
@@ -66,3 +75,7 @@
   .modal
     &__dialog
       max-height: 90vh
+  .burger
+    &-modal
+      &--visible
+        overflow: auto
