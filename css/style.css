@@ -347,24 +347,24 @@ template {
 
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/Lato/black/Lato-Black.woff2") format("woff2"), url("../fonts/Lato/black/Lato-Black.woff") format("woff");
+  src: url("../fonts/Lato/Black/Lato-Black.woff2") format("woff2"), url("../fonts/Lato/Black/Lato-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url("../fonts/Lato/heavy/Lato-Heavy.woff2") format("woff2"), url("../fonts/Lato/heavy/Lato-Heavy.woff") format("woff");
-  font-weight: 800;
+  font-family: 'Lato Heavy';
+  src: url("../fonts/Lato/Heavy/Lato-Heavy.woff2") format("woff2"), url("../fonts/Lato/Heavy/Lato-Heavy.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Heavy';
   src: url("../fonts/Lato/Heavy-Italic/Lato-HeavyItalic.woff2") format("woff2"), url("../fonts/Lato/Heavy-Italic/Lato-HeavyItalic.woff") format("woff");
-  font-weight: 700;
+  font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
@@ -410,7 +410,6 @@ img {
 .nav-list__link {
   font-family: "Lato", 'Helvetica', sans-serif;
   font-size: 14px;
-  font-weight: 700;
   text-decoration: none;
   color: #ffffff;
   transition: color 0.2s ease;
@@ -703,9 +702,8 @@ img {
 
 .tabs-button__recomendation-title {
   margin: 0;
-  font-family: "Lato", 'Helvetica', sans-serif;
+  font-family: "Lato Heavy", 'Helvetica', sans-serif;
   font-size: 14px;
-  font-weight: 800;
   color: #262D33;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -743,9 +741,8 @@ img {
 
 .tabs-button__title {
   margin: 0;
-  font-family: "Lato", 'Helvetica', sans-serif;
+  font-family: "Lato Heavy", 'Helvetica', sans-serif;
   font-size: 12px;
-  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
