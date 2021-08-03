@@ -1,5 +1,7 @@
 .navbar
   background-color: $dark-background
+  &__container
+    min-height: 545px
   &__nav
     display: flex
     justify-content: space-between
@@ -20,14 +22,14 @@
       &:last-child
         margin: 0
   &__button
-    padding: 10px 15px 9px 15px
+    padding: 12px 15px 11px 15px
     min-width: 261px
     color: $light-text-color
     border: none
     background-color: #656b70
     border-radius: 10px
     text-transform: uppercase
-    +Lato(normal, normal, 14px, 20px)
+    +Lato(14px)
     cursor: pointer
     transition: background-color 0.2s ease
     outline: none
@@ -74,6 +76,141 @@
           animation: closeBurgerThird
           animation-duration: 1s
           animation-fill-mode: forwards
+  &__hero
+    position: absolute
+    top: 100px
+    left: 50%
+    transform: translateX(-50%)
+    width: 1140px
+    min-height: 570px
+    border-radius: 10px
+    overflow: hidden
+    background-color: $light-text-color
+
+.tabs
+  display: flex
+  width: 100%
+  min-height: 570px
+  &-item
+    padding: 55px 55px 100px 55px
+    width: 877px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-image: url('../img/main/header/hero/David-Gurov-article.jpg')
+    background-repeat: no-repeat
+    object-fit: cover
+    background-size: cover
+    &__img
+      margin-right: 10px
+      width: 45px
+      height: 45px
+      border-radius: 50%
+    &__user
+      display: flex
+    &__text
+      margin-top: 7px
+      display: flex
+      flex-direction: column
+    &__name
+      +Lato(14px)
+      color: $light-text-color
+      opacity: 0.85
+    &__profession
+      margin-top: 5px
+      +Lato(12px)
+      color: $light-text-color
+      opacity: 0.4
+  &-utp
+    &__category
+      +Lato(12px)
+      margin-bottom: 21px
+      color: $active-color
+      text-transform: uppercase
+      display: inline-block
+      letter-spacing: 0.5px
+    &__title
+      margin: 0 0 49px 0
+      +Roboto-Slab(40px)
+      max-width: 598px
+      color: $light-text-color
+      line-height: 50px
+    &__button
+      position: relative
+      display: inline-block
+      text-decoration: none
+      outline: none
+      padding: 13px 47px 11px 20px
+      &::after
+        content: ''
+        position: absolute
+        display: block
+        top: 17px
+        right: 22px
+        background-image: url('../img/main/header/hero/arrow-read-more.png')
+        background-repeat: no-repeat
+        width: 15px
+        height: 7px
+  &-button
+    max-width: 263px
+    &__recomendation
+      padding: 23px 25px 21px 25px
+      position: relative
+      &::after
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #D9DADB
+        position: absolute
+        bottom: 0
+        left: 0
+      &-title
+        margin: 0
+        +Lato(14px)
+        font-weight: 800
+        color: $darken-text-color
+        text-transform: uppercase
+        letter-spacing: 0.5px
+    &__item
+      padding: 19px 25px 19px 25px
+      height: 100px
+      position: relative
+      cursor: pointer
+      &::after
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: #D9DADB
+        position: absolute
+        bottom: 0
+        left: 0
+      &:last-child
+        height: 100%
+        &::after
+          width: 0
+          height: 0
+    &__title
+      margin: 0
+      +Lato(12px)
+      font-weight: 800
+      text-transform: uppercase
+      letter-spacing: 0.5px
+      &--color
+        &_one
+          color: #3BBDC4
+        &_two
+          color: #6E99AE
+        &_three
+          color: #AC8EE3
+        &_four
+          color: #FFA34D
+        &_five
+          color: #3DC47E
+    &__description
+      margin-top: 9px
+      +Lato(14px)
+      line-height: 20px
+      display: inline-block
 
 .burger-modal
   display: none
@@ -97,14 +234,6 @@
     padding-top: 30px
     display: block
     height: 340px
-
-.section
-  height: 1000px
-  background-color: red
-
-.footer
-  height: 1000px
-  background-color: pink
 
 .navbar
   &-list

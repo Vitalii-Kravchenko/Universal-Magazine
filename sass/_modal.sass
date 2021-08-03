@@ -74,14 +74,15 @@
         transform: rotate(-90deg)
   &__title
     margin: 0
-    +Roboto-Slab(bold, normal, 20px, 25px)
+    +Roboto-Slab(20px)
+    font-weight: 700
     color: $darken-text-color
   &-theme
     position: relative
     margin-top: 26px
     &__title
       margin: 0
-      +Lato(normal, normal, 14px, 20px)
+      +Lato(14px)
       color: $darken-text-color
     &__select
       margin: 4px 0 0 0
@@ -93,7 +94,7 @@
       appearance: none
       border: 1px solid #939699
       outline: none
-      +Lato(normal, normal, 14px, 20px)
+      +Lato(14px)
       color: #939699
       z-index: 105
     &__arrow
@@ -111,7 +112,7 @@
     position: relative
     &__title
       margin: 0
-      +Lato(normal, normal, 14px, 20px)
+      +Lato(14px)
       color: $darken-text-color
     &__item
       position: relative
@@ -119,7 +120,7 @@
       padding: 10px
       width: 100%
       min-height: 120px
-      +Lato(normal, normal, 14px, 20px)
+      +Lato(14px)
       color: $darken-text-color
       border: 1px solid #D9DADB
       resize: none
@@ -131,7 +132,7 @@
     position: relative
     &__title
       margin: 0
-      +Lato(normal, normal, 14px, 20px)
+      +Lato(14px)
       color: $darken-text-color
     &__input
       position: relative
@@ -139,7 +140,7 @@
       margin-bottom: 15px
       padding: 9px
       width: 100%
-      +Lato(normal, normal, 14px, 20px)
+      +Lato(14px)
       border: 1px solid #D9DADB
       border-radius: 5px
       outline: none
@@ -184,7 +185,7 @@
     &__text
       margin-top: 2px
       margin-left: 10px
-      +Lato(normal, normal, 14px, 14px)
+      +Lato(14px)
       color: $darken-text-color
 
 #theme-error, #message-error, #email-error, #checkbox-error
@@ -197,7 +198,7 @@
   border-radius: 5px
   z-index: 104
   width: 100%
-  +Lato(normal, normal, 9px, 9px)
+  +Lato(9px)
 
 #theme-error
   top: 59px

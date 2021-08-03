@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="fonts/Lato/Regular/Lato-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
@@ -239,14 +246,83 @@
         </div>
         <!-- /.nav navbar__nav -->
         <!-- /.navbar-burger -->
-        <div class="navbar__hero"></div>
+        <div class="navbar__hero">
+          <div class="tabs">
+            <div class="tabs-item">
+              <div class="tabs-item__user">
+                <img
+                  class="tabs-item__img"
+                  src="img/main/header/hero/David-Gurov.jpg"
+                  alt="User Photo"
+                />
+                <div class="tabs-item__text">
+                  <span class="tabs-item__name">Давид Гуров</span>
+                  <span class="tabs-item__profession">Разработчик</span>
+                </div>
+              </div>
+              <!-- /.tabs-item__user -->
+              <div class="tabs-utp">
+                <span class="tabs-utp__category">Javascript</span>
+                <h1 class="tabs-utp__title">
+                  Расширение Chrome защищает от атак
+                </h1>
+                <a class="button tabs-utp__button" href="#">Читать далее</a>
+              </div>
+            </div>
+            <div class="tabs-button">
+              <div class="tabs-button__recomendation">
+                <h3 class="tabs-button__recomendation-title">Рекомендуем</h3>
+              </div>
+              <div class="tabs-button__item" data-tabs="1">
+                <h3 class="tabs-button__title tabs-button__title--color_one">
+                  css
+                </h3>
+                <span class="tabs-button__description"
+                  >Как использовать CSS float после того, как вышел
+                  Flexbox</span
+                >
+              </div>
+              <div class="tabs-button__item" data-tabs="2">
+                <h3 class="tabs-button__title tabs-button__title--color_two">
+                  javascript
+                </h3>
+                <span class="tabs-button__description"
+                  >На каком стандарте писать скрипты, если я фрилансер</span
+                >
+              </div>
+              <div class="tabs-button__item" data-tabs="3">
+                <h3 class="tabs-button__title tabs-button__title--color_three">
+                  html
+                </h3>
+                <span class="tabs-button__description"
+                  >Правильно вставляем картинку на сайт для Retina дисплея</span
+                >
+              </div>
+              <div class="tabs-button__item" data-tabs="4">
+                <h3 class="tabs-button__title tabs-button__title--color_four">
+                  Web design
+                </h3>
+                <span class="tabs-button__description"
+                  >ТОП-10 плагинов для Figma</span
+                >
+              </div>
+              <div class="tabs-button__item" data-tabs="5">
+                <h3 class="tabs-button__title tabs-button__title--color_five">
+                  CSS
+                </h3>
+                <span class="tabs-button__description"
+                  >Возможности CSS Grid Layout , которые уже можно
+                  применять</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- /.navbar__hero -->
       </div>
       <!-- /.container container__navbar -->
     </header>
     <!-- /.navbar -->
-    <div class="section"></div>
-    <div class="footer"></div>
     <div class="modal">
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
