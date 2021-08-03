@@ -93,8 +93,8 @@
   min-height: 570px
   background-color: $light-text-color
   &-item
-    display: none
-    visibility: hidden
+    display: flex
+    visibility: visible
     padding: 55px 55px 100px 55px
     width: 877px
     flex-direction: column
@@ -121,9 +121,12 @@
       display: flex
       visibility: visible
       animation: tabsVisible
-      animation-duration: 0.5s
+      animation-duration: 1s
       animation-fill-mode: forwards
       border-radius: 10px 0 0 10px
+    &--hidden
+      display: none
+      visibility: hidden
     &__img
       margin-right: 10px
       width: 45px

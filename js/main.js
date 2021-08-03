@@ -174,8 +174,10 @@ $(document).ready(function () {
 
     $('.tabs-item').each(function () {
       $(this).removeClass('tabs-item--visible');
+      $(this).addClass('tabs-item--hidden');
 
       if ($(this).attr('data-tabs') == tabsNumber) {
+        $(this).removeClass('tabs-item--hidden');
         $(this).addClass('tabs-item--visible');
       }
     });
