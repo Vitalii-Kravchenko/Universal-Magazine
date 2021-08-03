@@ -960,6 +960,10 @@ img {
   height: 1000px;
 }
 
+.modal {
+  z-index: 170;
+}
+
 .modal__overlay {
   visibility: hidden;
   position: absolute;
@@ -990,7 +994,7 @@ img {
   left: 50%;
   transform: translate(-50%, -150vh);
   height: 530px;
-  z-index: 101;
+  z-index: 170;
   display: flex;
   flex-direction: column;
   width: 360px;
@@ -1210,7 +1214,7 @@ img {
 }
 
 #theme-error, #message-error, #email-error, #checkbox-error {
-  padding: 9px 10px 3px 10px;
+  padding: 9px 10px 2px 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1224,15 +1228,15 @@ img {
 }
 
 #theme-error {
-  top: 59px;
+  top: 51px;
 }
 
 #message-error {
-  top: 139px;
+  top: 135px;
 }
 
 #email-error {
-  top: 57px;
+  top: 49px;
 }
 
 #checkbox-error {
