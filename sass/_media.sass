@@ -33,7 +33,30 @@
     padding-top: 125px
     &__link
       &::before
-        display: none
+        left: -30px
+        top: 0
+        bottom: 0
+      &:nth-child(1)
+        &::before
+          display: none
+      &:nth-child(3)
+        &::before
+          display: none
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        height: 1px
+        width: 100%
+        background-color: #4B5157
+      &:nth-child(1)
+        &::after
+          display: none
+      &:nth-child(2)
+        &::after
+          display: none
     &__card
       margin: 10px 0
       width: 420px
@@ -185,6 +208,11 @@
       justify-content: flex-start
 
   .articles
+    &-livehack
+      &__link
+        &:nth-child(2)
+          &::after
+            display: block
     &-cards
       grid-template-columns: 1fr 1fr
       grid-template-rows: 170px 170px 170px 170px 170px 170px 1fr 1fr 1fr
@@ -399,6 +427,22 @@
       &__img
         &:hover
           opacity: 0.6
+    &-livehack
+      &__card
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          top: -25px
+          bottom: -30px
+          left: -27px
+          right: -25px
+          background-color: $light-text-color
+          opacity: 0
+          transition: opacity 0.2s ease
+        &:hover
+          &::after
+            opacity: 0.2
 
 @media ( max-height: 576px )
   .modal

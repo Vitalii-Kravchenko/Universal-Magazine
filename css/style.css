@@ -1867,6 +1867,30 @@ img {
     padding-top: 125px;
   }
   .articles-livehack__link::before {
+    left: -30px;
+    top: 0;
+    bottom: 0;
+  }
+  .articles-livehack__link:nth-child(1)::before {
+    display: none;
+  }
+  .articles-livehack__link:nth-child(3)::before {
+    display: none;
+  }
+  .articles-livehack__link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #4B5157;
+  }
+  .articles-livehack__link:nth-child(1)::after {
+    display: none;
+  }
+  .articles-livehack__link:nth-child(2)::after {
     display: none;
   }
   .articles-livehack__card {
@@ -2035,6 +2059,9 @@ img {
   .articles-livehack__card {
     width: 100%;
     justify-content: flex-start;
+  }
+  .articles-livehack__link:nth-child(2)::after {
+    display: block;
   }
   .articles-cards {
     grid-template-columns: 1fr 1fr;
@@ -2255,6 +2282,23 @@ img {
   }
   .articles-social__img:hover {
     opacity: 0.6;
+  }
+  .articles-livehack__card {
+    position: relative;
+  }
+  .articles-livehack__card::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    bottom: -30px;
+    left: -27px;
+    right: -25px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .articles-livehack__card:hover::after {
+    opacity: 0.2;
   }
 }
 
