@@ -1531,6 +1531,11 @@ img {
   transition: opacity 0.2s ease;
 }
 
+.articles-link {
+  text-decoration: none;
+  display: contents;
+}
+
 .modal {
   z-index: 170;
 }
@@ -1876,7 +1881,7 @@ img {
   .articles-cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 170px 170px 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'one one two' 'one one two' 'three check tags' 'three social tags' 'four five six' 'seven seven seven';
+    grid-template-areas: 'one one check' 'one one tags' 'two three tags' 'two three social' 'four five six' 'seven seven seven';
   }
   .articles-three__img {
     width: 100%;
@@ -1961,7 +1966,7 @@ img {
   .articles-cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 170px 170px 170px 170px 1fr 1fr;
-    grid-template-areas: 'one one' 'one one' 'two three' 'two three' 'check tags' 'social tags' 'four five' 'six seven';
+    grid-template-areas: 'one one' 'one one' 'two three' 'two three' 'four tags' 'five tags' 'six seven' 'check social';
   }
   .articles-social {
     padding: 31px 66px 20px 66px;
@@ -2034,7 +2039,7 @@ img {
   .articles-cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 170px 170px 170px 170px 170px 170px 1fr 1fr 1fr;
-    grid-template-areas: 'one one' 'one one' 'two two' 'two two' 'three tags' 'three tags' 'check social' 'four five' 'six seven';
+    grid-template-areas: 'one one' 'one one' 'two two' 'two two' 'three tags' 'three tags' 'four five' 'six seven' 'check social';
   }
   .articles-one {
     padding: 15px 0 13px 25px;
@@ -2087,7 +2092,7 @@ img {
 @media (max-width: 576px) {
   .articles-cards {
     grid-template-columns: 1fr;
-    grid-template-rows: 437px 1fr 1fr auto 150px 170px;
+    grid-template-rows: 437px 1fr 1fr auto 150px 150px;
     grid-template-areas: 'one' 'two' 'three' 'tags' 'check' 'social' 'four' 'five' 'six' 'seven';
   }
   .articles-one::before {
@@ -2142,6 +2147,9 @@ img {
   }
   .articles-check::before {
     top: 14px;
+  }
+  .articles-social__link {
+    margin-top: 27px;
   }
   .articles-social__icons {
     max-width: 200px;
@@ -2219,6 +2227,25 @@ img {
   }
   .tabs-button__item:hover {
     background-color: #F5F5F5;
+  }
+  .articles-one, .articles-two, .articles-three, .articles-four, .articles-five, .articles-six, .articles-seven {
+    position: relative;
+  }
+  .articles-one::after, .articles-two::after, .articles-three::after, .articles-four::after, .articles-five::after, .articles-six::after, .articles-seven::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: #262D33;
+    opacity: 0;
+    z-index: 200;
+    transition: opacity 0.2s ease;
+  }
+  .articles-one:hover::after, .articles-two:hover::after, .articles-three:hover::after, .articles-four:hover::after, .articles-five:hover::after, .articles-six:hover::after, .articles-seven:hover::after {
+    opacity: 0.2;
   }
   .articles-check__button:hover {
     background-color: #76d1d6;

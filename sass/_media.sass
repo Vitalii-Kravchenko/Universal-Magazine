@@ -46,7 +46,7 @@
     &-cards
       grid-template-columns: 1fr 1fr 1fr
       grid-template-rows: 170px 170px 1fr 1fr 1fr 1fr
-      grid-template-areas: 'one one two' 'one one two' 'three check tags' 'three social tags' 'four five six' 'seven seven seven'
+      grid-template-areas: 'one one check' 'one one tags' 'two three tags' 'two three social' 'four five six' 'seven seven seven'
     &-three
       &__img
         width: 100%
@@ -121,7 +121,7 @@
     &-cards
       grid-template-columns: 1fr 1fr
       grid-template-rows: 170px 170px 170px 170px 1fr 1fr
-      grid-template-areas: 'one one' 'one one' 'two three' 'two three' 'check tags' 'social tags' 'four five' 'six seven'
+      grid-template-areas: 'one one' 'one one' 'two three' 'two three' 'four tags' 'five tags' 'six seven' 'check social'
     &-social
       padding: 31px 66px 20px 66px
       &__link
@@ -188,7 +188,7 @@
     &-cards
       grid-template-columns: 1fr 1fr
       grid-template-rows: 170px 170px 170px 170px 170px 170px 1fr 1fr 1fr
-      grid-template-areas: 'one one' 'one one' 'two two' 'two two' 'three tags' 'three tags' 'check social' 'four five' 'six seven'
+      grid-template-areas: 'one one' 'one one' 'two two' 'two two' 'three tags' 'three tags' 'four five' 'six seven' 'check social'
     &-one
       padding: 15px 0 13px 25px
       &__top
@@ -235,7 +235,7 @@
   .articles
     &-cards
       grid-template-columns: 1fr
-      grid-template-rows: 437px 1fr 1fr auto 150px 170px
+      grid-template-rows: 437px 1fr 1fr auto 150px 150px
       grid-template-areas: 'one' 'two' 'three' 'tags' 'check' 'social' 'four' 'five' 'six' 'seven'
     &-one
       &::before
@@ -280,6 +280,8 @@
       &::before
         top: 14px
     &-social
+      &__link
+        margin-top: 27px
       &__icons
         max-width: 200px
 
@@ -367,6 +369,23 @@
           background-color: #F5F5F5
 
   .articles
+    &-one, &-two, &-three, &-four, &-five, &-six, &-seven
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        border-radius: 10px
+        background-color: $darken-text-color
+        opacity: 0
+        z-index: 200
+        transition: opacity 0.2s ease
+      &:hover
+        &::after
+          opacity: 0.2
     &-check
       &__button
         &:hover
