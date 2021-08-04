@@ -29,6 +29,19 @@
   .thanks
     padding-top: 220px
 
+  .articles-livehack
+    padding-top: 125px
+    &__link
+      &::before
+        display: none
+    &__card
+      margin: 10px 0
+      width: 420px
+      justify-content: flex-start
+    &__img
+      margin-right: 20px
+      order: -1
+
 @media ( max-width: 992px )
   .container
     max-width: 720px
@@ -78,6 +91,14 @@
   .thanks
     padding-top: 400px
 
+  .articles-livehack
+    padding-top: 340px
+    &__link
+      &::before
+        left: -15px
+    &__card
+      width: 320px
+
 @media ( max-width: 768px )
   .container
     max-width: 90%
@@ -119,6 +140,16 @@
   .thanks
     padding-top: 290px
 
+  .articles-livehack
+    padding-top: 200px
+    &__link
+      width: 100%
+      &::before
+        display: none
+    &__card
+      width: 100%
+      justify-content: flex-start
+
 @media ( max-width: 480px )
   .navbar
     &__hero
@@ -151,6 +182,9 @@
 
   .thanks
     padding-top: 200px
+
+  .articles-livehack
+    padding-top: 110px
 
 @media ( min-width: 992px )
   .button
