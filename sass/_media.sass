@@ -54,6 +54,12 @@
       &__date
         margin-top: 10px
 
+  .hot-news
+    &__title
+      margin: 71px 0 0 0
+      font-size: 35px
+      line-height: 40px
+
 @media ( max-width: 992px )
   .container
     max-width: 720px
@@ -121,6 +127,12 @@
       &__link
         margin-top: 41px
 
+  .hot-news
+    &__title
+      margin: 80px 0 0 0
+      font-size: 27px
+      line-height: 35px
+
 @media ( max-width: 768px )
   .container
     max-width: 90%
@@ -152,7 +164,7 @@
         line-height: 35px
       &__button
         &::after
-          top: 15px
+          top: 17px
           right: 19px
     &-button
       &__recomendation
@@ -213,12 +225,18 @@
         font-size: 12px
         line-height: 16px
 
+  .hot-news
+    &__title
+      font-size: 19px
+      line-height: 30px
+
 @media ( max-width: 576px )
+
   .articles
     &-cards
       grid-template-columns: 1fr
-      grid-template-rows: 437px 370px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-      grid-template-areas: 'one' 'two' 'two' 'three' 'tags' 'check' 'social' 'four' 'five' 'six' 'seven'
+      grid-template-rows: 437px 1fr 1fr auto 150px 170px
+      grid-template-areas: 'one' 'two' 'three' 'tags' 'check' 'social' 'four' 'five' 'six' 'seven'
     &-one
       &::before
         bottom: 65px
@@ -265,6 +283,18 @@
       &__icons
         max-width: 200px
 
+  .tabs
+    &-utp
+      &__button
+        &::after
+          top: 15px
+
+  .hot-news
+    &__title
+      margin: 90px 0 0 0
+      font-size: 16px
+      line-height: 25px
+
 @media ( max-width: 480px )
   .navbar
     &__hero
@@ -300,6 +330,12 @@
 
   .articles-livehack
     padding-top: 110px
+
+  .hot-news
+    &__title
+      font-size: 13px
+      line-height: 22px
+      max-width: 100%
 
 @media ( min-width: 992px )
   .button
