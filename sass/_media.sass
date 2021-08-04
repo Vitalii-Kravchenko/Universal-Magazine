@@ -42,6 +42,18 @@
       margin-right: 20px
       order: -1
 
+  .articles
+    &-cards
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: 170px 170px 1fr 1fr 1fr 1fr
+      grid-template-areas: 'one one two' 'one one two' 'three check tags' 'three social tags' 'four five six' 'seven seven seven'
+    &-three
+      &__img
+        width: 100%
+    &-card
+      &__date
+        margin-top: 10px
+
 @media ( max-width: 992px )
   .container
     max-width: 720px
@@ -99,6 +111,16 @@
     &__card
       width: 320px
 
+  .articles
+    &-cards
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 170px 170px 170px 170px 1fr 1fr
+      grid-template-areas: 'one one' 'one one' 'two three' 'two three' 'check tags' 'social tags' 'four five' 'six seven'
+    &-social
+      padding: 31px 66px 20px 66px
+      &__link
+        margin-top: 41px
+
 @media ( max-width: 768px )
   .container
     max-width: 90%
@@ -149,6 +171,99 @@
     &__card
       width: 100%
       justify-content: flex-start
+
+  .articles
+    &-cards
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 170px 170px 170px 170px 170px 170px 1fr 1fr 1fr
+      grid-template-areas: 'one one' 'one one' 'two two' 'two two' 'three tags' 'three tags' 'check social' 'four five' 'six seven'
+    &-one
+      padding: 15px 0 13px 25px
+      &__top
+        &-title
+          margin: 66px 0 0 0
+          font-size: 20px
+        &-description
+          font-size: 13px
+          line-height: 20px
+        &-img
+          margin-top: 94px
+          width: 200px
+          height: 205px
+      &__bottom
+        &-title
+          margin: 2px 0 0 5px
+          font-size: 12px
+    &-tags
+      padding: 25px 17px 30px 17px
+    &-check
+      &__text
+        &-title
+          font-size: 15px
+    &-social
+      padding: 23px 26px 23px 26px
+      &__icons
+        max-width: 200px
+      &__link
+        margin-top: 45px
+    &-card
+      &__title
+        font-size: 14px
+      &__description
+        font-size: 12px
+        line-height: 16px
+
+@media ( max-width: 576px )
+  .articles
+    &-cards
+      grid-template-columns: 1fr
+      grid-template-rows: 437px 370px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+      grid-template-areas: 'one' 'two' 'two' 'three' 'tags' 'check' 'social' 'four' 'five' 'six' 'seven'
+    &-one
+      &::before
+        bottom: 65px
+      &__top
+        flex-direction: column
+        &-right
+          display: flex
+          justify-content: flex-end
+        &-title
+          margin: 56px 0 0 0
+          font-size: 18px
+          line-height: 25px
+          max-width: 310px
+        &-description
+          margin: 20px 0 0 0
+          line-height: 18px
+          max-width: 310px
+          font-size: 12px
+        &-img
+          margin-top: 0
+          width: 166px
+          height: 170px
+      &__bottom
+        align-items: center
+        height: 54px
+        &-text
+          flex-wrap: wrap
+        &-title
+          margin: 5px 0 0 0
+          order: 3
+        &-name
+          margin-top: 7px
+          order: 1
+      &__comments
+        margin: 9px 0 0 16px
+        order: 2
+        width: 70px
+    &-three
+      padding-bottom: 15px
+    &-check
+      &::before
+        top: 14px
+    &-social
+      &__icons
+        max-width: 200px
 
 @media ( max-width: 480px )
   .navbar
