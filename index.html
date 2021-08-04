@@ -759,6 +759,26 @@
     </section>
     <!-- /.articles -->
 
+    <section
+      class="hot-news"
+      data-parallax="scroll"
+      data-image-src="img/main/hot-news/money.jpg"
+    >
+      <div class="container hot-news__container">
+        <h2 class="hot-news__title">
+          Расследование недели: сколько зарабатывает веб разработчик в Москве
+        </h2>
+        <a
+          class="button tabs-utp__button hot-news__button"
+          href="#"
+          target="_blank"
+          rel="noopener nofollow"
+          >Читать статью</a
+        >
+      </div>
+    </section>
+    <div class="section__footer"></div>
+
     <div class="modal">
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
@@ -768,7 +788,12 @@
           <div class="modal-theme">
             <h4 class="modal-theme__title">Тема</h4>
             <select class="modal-theme__select" name="theme" required>
-              <option class="modal-theme__item" value="" disabled selected>
+              <option
+                class="modal-theme__item modal-theme__item-first"
+                value=""
+                disabled
+                selected
+              >
                 Выберите тему
               </option>
               <option class="modal-theme__item" value="Статьи">Статьи</option>
@@ -837,6 +862,7 @@
 
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/parallax.min.js"></script>
     <script defer src="js/main.js"></script>
   </body>
 </html>
