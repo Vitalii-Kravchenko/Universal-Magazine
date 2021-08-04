@@ -1,4 +1,39 @@
 .articles-livehack
-  background-color: #edeff0
-  width: 100%
-  height: 1000px
+  padding-top: 155px
+  &__container
+    padding: 25px 25px 30px 25px
+    background-color: $dark-background
+    display: flex
+    justify-content: space-between
+    border-radius: 10px
+  &__link
+    text-decoration: none
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -27px
+      width: 1px
+      height: 100%
+      background-color: $dark-text-color
+      pointer-events: none
+      cursor: default
+    &:first-child
+      &::before
+        display: none
+  &__card
+    position: relative
+    display: flex
+    align-items: center
+    max-width: 234px
+    min-height: 75px
+  &__title
+    margin: 0
+    +Lato(13px)
+    color: $light-text-color
+    line-height: 20px
+  &__img
+    width: 65px
+    height: 65px
+    object-fit: cover
