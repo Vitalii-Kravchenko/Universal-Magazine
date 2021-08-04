@@ -215,6 +215,21 @@
         &:hover
           background-color: #F5F5F5
 
+  .articles
+    &-check
+      &__button
+        &:hover
+          background-color: lighten(#3BBDC4, 15%)
+    &-tags
+      &__buttons
+        &-item
+          &:hover
+            background-color: darken($light-text-color, 15%)
+    &-social
+      &__img
+        &:hover
+          opacity: 0.6
+
 @media ( max-height: 576px )
   .modal
     &__dialog

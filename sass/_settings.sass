@@ -39,3 +39,29 @@ img
   color: $light-text-color
   cursor: pointer
   transition: background-color 0.2s ease
+
+.comments
+  display: flex
+  align-items: center
+  &__img
+    width: 13.5px
+    height: 13.5px
+  &__counter
+    padding-left: 6px
+    +Lato(12px)
+    color: $light-text-color
+.like
+  display: flex
+  align-items: center
+  &__img
+    width: 12.75px
+    height: 11.7px
+  &__counter
+    margin: 2px 0 0 6px
+    +Lato(12px)
+    color: $light-text-color
+
+.date
+  +Lato(12px)
+  color: $light-text-color
+  opacity: 0.4

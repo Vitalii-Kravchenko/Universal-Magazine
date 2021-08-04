@@ -1,0 +1,316 @@
+.articles
+  &__container
+    padding-top: 30px
+  &-cards
+    height: 770px
+    display: grid
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    grid-template-areas: 'one one two check' 'one one two tags' 'three four five tags' 'three six seven social'
+    grid-gap: 30px
+  &-one
+    padding: 15px 0 13px 35px
+    position: relative
+    grid-area: one
+    border-radius: 10px
+    background-color: $light-text-color
+    &::before
+      content: ''
+      position: absolute
+      bottom: 55px
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #D9DADB
+    &__comments
+      margin: 2px 0 0 16px
+      &-counter
+        color: #939699
+    &__top
+      display: flex
+      position: relative
+      &::before
+        content: 'Статьи'
+        position: absolute
+        top: 22px
+        left: 0px
+        text-transform: uppercase
+        +Lato(12px)
+        font-weight: 600
+        letter-spacing: 0.5px
+        color: #6E99AE
+      &-title
+        margin: 56px 0 0 0
+        +Roboto-Slab(25px)
+        color: $darken-text-color
+        line-height: 30px
+      &-description
+        margin: 25px 0 0 0
+        +Lato(14px)
+        line-height: 20px
+      &-img
+        width: 292px
+        height: 299px
+    &__bottom
+      margin-top: 9px
+      padding-right: 25px
+      display: flex
+      align-items: center
+      &-text
+        margin-left: 10px
+        display: flex
+        align-items: center
+      &-name
+        +Lato(14px)
+        color: $darken-text-color
+        font-weight: 600
+        letter-spacing: -0.3px
+      &-title
+        margin: 1px 0 0 5px
+        +Lato(14px)
+        color: $dark-text-color
+        font-weight: 400
+      &-img
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        object-fit: cover
+  &-two
+    padding: 19px 25px 25px 24px
+    position: relative
+    grid-area: two
+    border-radius: 10px
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/main/articles/light-bulb.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    &::before
+      padding: 7px 13px 5px 12px
+      content: 'Популярное'
+      position: absolute
+      top: 19px
+      left: 24px
+      +Lato(12px)
+      color: $light-text-color
+      border-radius: 3px
+      background-color: #3DC47E
+    &__text
+      &-theme
+        margin: 0 0 22px 0
+        +Lato(13px)
+        font-weight: 900
+        color: #E7D9FF
+        text-transform: uppercase
+        line-height: 15px
+      &-title
+        margin: 0 0 27px 0
+        letter-spacing: 0.5px
+        +Roboto-Slab(16px)
+        line-height: 25px
+        color: $light-text-color
+        text-transform: uppercase
+    &__user
+      display: flex
+      align-items: center
+      &-text
+        margin-left: 10px
+        display: flex
+        flex-direction: column
+        justify-content: center
+      &-name
+        margin-bottom: 3px
+        +Lato(14px)
+        color: $light-text-color
+      &-social
+        display: flex
+        align-items: center
+      &-img
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        object-fit: cover
+    &__comments
+      margin-left: 8px
+      opacity: 0.4
+    &__like
+      margin-left: 9px
+      opacity: 0.4
+  &-check
+    grid-area: check
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    position: relative
+    border-radius: 10px
+    background-color: #3BBDC4
+    &::before
+      content: ''
+      position: absolute
+      background-image: url('../img/main/articles/list.png')
+      background-repeat: no-repeat
+      top: 24px
+      right: 22px
+      width: 56px
+      height: 72px
+      opacity: 0.4
+      z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      bottom: 45px
+      width: 100%
+      height: 1px
+      background-color: #96E2E3
+    &__text
+      padding: 24px 25px 21px 25px
+      z-index: 2
+      &-title
+        margin: 0 0 11px 0
+        +Roboto-Slab(16px)
+        line-height: 25px
+        color: $light-text-color
+      &-subtitle
+        +Lato(14px)
+        text-transform: uppercase
+        color: $light-text-color
+    &__button
+      padding-bottom: 14px
+      padding-top: 10px
+      border: none
+      text-align: center
+      background-color: #3BBDC4
+      border-radius: 0 0 10px 10px
+      +Lato(14px)
+      color: $light-text-color
+      text-decoration: none
+      transition: background-color 0.2s ease
+      &-img
+        margin-right: 8px
+        position: relative
+        top: 3px
+        left: 0px
+        width: 17px
+        height: 17px
+  &-tags
+    padding: 23px 28px 30px 25px
+    grid-area: tags
+    position: relative
+    border-radius: 10px
+    background-color: $light-text-color
+    &::before
+      content: ''
+      position: absolute
+      top: 59px
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #D9DADB
+    &__text
+      height: 36px
+      &-title
+        margin: 0
+        +Lato(13px)
+        font-weight: 900
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $darken-text-color
+    &__buttons
+      padding-top: 26px
+      &-item
+        margin: 15px 6px 0 0
+        padding: 7px 13px 5px 15px
+        +Lato(14px)
+        font-weight: 900
+        display: inline-block
+        color: $darken-text-color
+        border: 1px solid #D9DADB
+        border-radius: 5px
+        background-color: $light-text-color
+        transition: background-color 0.2s ease
+        cursor: pointer
+        &:nth-child(1)
+          margin: 0 6px 0 0
+        &:nth-child(2)
+          margin: 0 6px 0 0
+  &-three
+    padding-bottom: 11px
+    position: relative
+    grid-area: three
+    border-radius: 10px
+    background-color: $light-text-color
+    &__img
+      width: 263px
+      height: 275px
+      border-radius: 10px 10px 0 0
+      overflow: hidden
+      object-fit: cover
+    &__title
+      margin: 11px 25px 0 25px
+      +Roboto-Slab(16px)
+      color: $darken-text-color
+      line-height: 25px
+  &-four
+    grid-area: four
+    border-radius: 10px
+    background-color: $light-text-color
+  &-card
+    padding: 29px 24px 29px 24px
+    display: flex
+    flex-direction: column
+    height: 100%
+    display: flex
+    flex-direction: column
+    &__text
+      margin-top: 9px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 100%
+    &__title
+      margin: 0
+      +Roboto-Slab(16px)
+      color: $darken-text-color
+    &__description
+      +Lato(14px)
+      margin: 0
+      color: $dark-text-color
+      line-height: 20px
+    &__date
+      color: #939699
+      opacity: 1
+  &-five
+    grid-area: five
+    border-radius: 10px
+    background-color: $light-text-color
+  &-six
+    grid-area: six
+    border-radius: 10px
+    background-color: $light-text-color
+  &-seven
+    grid-area: seven
+    border-radius: 10px
+    background-color: $light-text-color
+  &-social
+    padding: 31px 36px 35px 36px
+    grid-area: social
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 10px
+    background-color: $light-text-color
+    &__title
+      margin: 0
+      +Roboto-Slab(20px)
+      color: $darken-text-color
+    &__icons
+      display: flex
+      justify-content: space-between
+      width: 100%
+    &__link
+      margin-top: 26px
+    &__img
+      width: 50px
+      height: 50px
+      transition: opacity 0.2s ease
