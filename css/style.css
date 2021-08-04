@@ -587,7 +587,7 @@ img {
   object-fit: cover;
 }
 
-.tabs-item__background--gradient {
+.tabs-item__background-gradient {
   position: absolute;
   top: 0;
   left: 0;
