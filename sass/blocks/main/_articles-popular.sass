@@ -20,6 +20,17 @@
         background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
         z-index: 10
         border-radius: 10px
+      &::after
+        padding: 7px 11px 5px 12px
+        content: 'Горячее'
+        position: absolute
+        top: 18px
+        left: 19px
+        +Lato(12px)
+        color: $light-text-color
+        background-color: #3DC47E
+        border-radius: 3px
+        z-index: 10
       &-title
         margin: 0
         +Roboto-Slab(40px)

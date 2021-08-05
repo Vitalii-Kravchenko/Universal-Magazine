@@ -43,7 +43,7 @@
         &::before
           height: 1px
           left: 0 !important
-          right: 0
+          right: -480px
           width: auto
       &:nth-child(2)
         &::after
@@ -163,7 +163,7 @@
         position: absolute
       &:nth-child(3)
         &::before
-          right: 30px
+          right: -345px
     &__card
       width: 320px
 
@@ -362,8 +362,9 @@
 
   .hot-news
     &__title
-      font-size: 19px
+      font-size: 24px
       line-height: 30px
+      max-width: none
 
   .news
     &-card
@@ -384,9 +385,9 @@
 
   .articles-popular
     &__grid
-      grid-template-columns: 1fr
-      grid-template-rows: 1fr 1fr 120px 120px 170px 170px
-      grid-template-areas: 'd' 'd' 'a' 'a' 'b' 'c'
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 150px 150px
+      grid-template-areas: 'd d' 'a b' 'a c'
     &__slider
       width: 100%
       height: 290px
@@ -403,11 +404,16 @@
         display: none
     &__one
       &-title
-        margin-top: 41px
+        margin-top: 31px
+        margin-left: 27px
         font-size: 24px
         max-width: 80%
       &-description
+        margin-left: 27px
         max-width: 80%
+      &-button
+        margin-left: 27px
+        margin-bottom: 30px
     &__button
       bottom: 45px
     &__user
@@ -480,7 +486,7 @@
   .hot-news
     &__title
       margin: 90px 0 0 0
-      font-size: 16px
+      font-size: 20px
       line-height: 25px
 
   .news
@@ -500,6 +506,37 @@
       &__link
         width: 100%
 
+  .articles-popular
+    &__grid
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr 120px 120px 170px 170px
+      grid-template-areas: 'd' 'd' 'a' 'a' 'b' 'c'
+    &__slider
+      width: 100%
+      height: 290px
+      &-title
+        font-size: 22px
+        line-height: 25px
+        max-width: 80%
+        top: 131px
+    &__slide
+      width: 100%
+      height: 290px
+    &__card
+      &-img
+        display: none
+    &__one
+      &-title
+        margin-top: 41px
+        font-size: 24px
+        max-width: 80%
+      &-description
+        max-width: 80%
+    &__button
+      bottom: 45px
+    &__user
+      top: 20px
+
 @media ( max-width: 480px )
   .navbar
     &__hero
@@ -509,6 +546,9 @@
     &__dialog
       padding: 30px 27px 40px 27px
       max-width: 90%
+    &-checkbox
+      &__text
+        margin-left: 5px
 
   .tabs
     min-height: auto
@@ -538,11 +578,13 @@
 
   .hot-news
     &__title
-      font-size: 13px
+      margin: 85px 0 0 0
+      font-size: 17px
       line-height: 22px
       max-width: 100%
     &__button
-      margin-top: 15px
+      margin-top: 20px
+      font-size: 13px
 
   .button-active
     padding: 10px 47px 8px 19px
@@ -566,6 +608,11 @@
     &__slider
       width: 100%
       height: 290px
+      &::after
+        padding: 5px 11px 3px 10px
+        font-size: 10px
+        top: 14px
+        left: 14px
       &-title
         font-size: 16px
         line-height: 20px
