@@ -1041,20 +1041,35 @@ img {
   position: relative;
 }
 
-.articles-livehack__link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -27px;
+.articles-livehack__link:nth-child(3)::before {
   width: 1px;
   height: 100%;
+  top: 0 !important;
+  left: -26px !important;
   background-color: #4B5157;
-  pointer-events: none;
-  cursor: default;
+  opacity: 1;
 }
 
-.articles-livehack__link:first-child::before {
+.articles-livehack__link:nth-child(4)::before {
+  width: 1px;
+  height: 100%;
+  top: 0 !important;
+  left: -26px !important;
+  background-color: #4B5157;
+  opacity: 1;
+}
+
+.articles-livehack__link:nth-child(1)::after {
   display: none;
+}
+
+.articles-livehack__link:nth-child(2)::after {
+  width: 1px;
+  height: 100%;
+  top: 0 !important;
+  left: -26px !important;
+  background-color: #4B5157;
+  opacity: 1;
 }
 
 .articles-livehack__card {
@@ -1866,33 +1881,6 @@ img {
   .articles-livehack {
     padding-top: 125px;
   }
-  .articles-livehack__link::before {
-    left: -30px;
-    top: 0;
-    bottom: 0;
-  }
-  .articles-livehack__link:nth-child(1)::before {
-    display: none;
-  }
-  .articles-livehack__link:nth-child(3)::before {
-    display: none;
-  }
-  .articles-livehack__link::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    width: 100%;
-    background-color: #4B5157;
-  }
-  .articles-livehack__link:nth-child(1)::after {
-    display: none;
-  }
-  .articles-livehack__link:nth-child(2)::after {
-    display: none;
-  }
   .articles-livehack__card {
     margin: 10px 0;
     width: 420px;
@@ -1901,6 +1889,18 @@ img {
   .articles-livehack__img {
     margin-right: 20px;
     order: -1;
+  }
+  .articles-livehack__link:nth-child(3)::before {
+    height: 1px;
+    left: 0 !important;
+    right: 0;
+    width: auto;
+  }
+  .articles-livehack__link:nth-child(2)::after {
+    left: -30px !important;
+  }
+  .articles-livehack__link:nth-child(4)::before {
+    left: -30px !important;
   }
   .articles-cards {
     grid-template-columns: 1fr 1fr 1fr;
@@ -1982,7 +1982,17 @@ img {
     padding-top: 340px;
   }
   .articles-livehack__link::before {
-    left: -15px;
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  .articles-livehack__link::after {
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  .articles-livehack__link:nth-child(3)::before {
+    right: 30px;
   }
   .articles-livehack__card {
     width: 320px;
@@ -2053,8 +2063,20 @@ img {
   .articles-livehack__link {
     width: 100%;
   }
-  .articles-livehack__link::before {
-    display: none;
+  .articles-livehack__link:nth-child(2)::after {
+    width: auto !important;
+    height: 1px !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  .articles-livehack__link:nth-child(3)::before {
+    right: 0 !important;
+  }
+  .articles-livehack__link:nth-child(4)::before {
+    width: auto !important;
+    height: 1px !important;
+    left: 0 !important;
+    right: 0 !important;
   }
   .articles-livehack__card {
     width: 100%;
@@ -2236,6 +2258,20 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .articles-livehack__link::after {
+    top: -25px !important;
+    left: -25px !important;
+    right: -26px !important;
+  }
+  .articles-livehack__link::before {
+    top: -25px !important;
+    bottom: -30px !important;
+    left: -25px !important;
+    right: -26px !important;
+  }
+}
+
 @media (min-width: 992px) {
   .button:hover {
     background-color: #92bfff;
@@ -2283,22 +2319,39 @@ img {
   .articles-social__img:hover {
     opacity: 0.6;
   }
-  .articles-livehack__card {
-    position: relative;
-  }
-  .articles-livehack__card::after {
+  .articles-livehack__link::before {
     content: '';
     position: absolute;
+    display: block;
+    left: -30px;
     top: -25px;
-    bottom: -30px;
-    left: -27px;
-    right: -25px;
+    bottom: 0;
+    right: -31px;
+    height: auto;
+    width: auto;
     background-color: #ffffff;
     opacity: 0;
     transition: opacity 0.2s ease;
   }
-  .articles-livehack__card:hover::after {
-    opacity: 0.2;
+  .articles-livehack__link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -30px;
+    top: 0;
+    bottom: -30px;
+    right: -31px;
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .articles-livehack__link:hover::after {
+    opacity: 0.3;
+  }
+  .articles-livehack__link:hover::before {
+    opacity: 0.3;
   }
 }
 
