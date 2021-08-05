@@ -499,6 +499,28 @@ img {
   margin-top: 24px;
 }
 
+.button-active {
+  position: relative;
+  padding: 13px 47px 11px 19px;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #4592FF;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.button-active::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: 21px;
+  width: 15px;
+  height: 7px;
+  background-image: url("../img/main/header/hero/arrow-read-more.png");
+  background-repeat: no-repeat;
+}
+
 .navbar {
   background-color: #262D33;
 }
@@ -2256,6 +2278,16 @@ img {
     font-size: 13px;
     line-height: 22px;
     max-width: 100%;
+  }
+  .hot-news__button {
+    margin-top: 15px;
+  }
+  .button-active {
+    padding: 10px 47px 8px 19px;
+    font-size: 12px;
+  }
+  .button-active::before {
+    top: 13px;
   }
 }
 

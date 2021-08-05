@@ -83,3 +83,21 @@ img
     text-align: center
   &__button
     margin-top: 24px
+
+.button-active
+  position: relative
+  padding: 13px 47px 11px 19px
+  +Lato(14px)
+  color: $light-text-color
+  background-color: $active-color
+  text-decoration: none
+  border-radius: 20px
+  &::before
+    content: ''
+    position: absolute
+    top: 17px
+    right: 21px
+    width: 15px
+    height: 7px
+    background-image: url('../img/main/header/hero/arrow-read-more.png')
+    background-repeat: no-repeat
