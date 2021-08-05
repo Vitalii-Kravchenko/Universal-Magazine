@@ -69,6 +69,16 @@
       font-size: 35px
       line-height: 40px
 
+  .news
+    &-card
+      max-width: 662px
+      &__img
+        width: 208px
+        height: auto
+      &__social
+        margin-top: 7px
+        padding-bottom: 0
+
 @media ( max-width: 992px )
   .container
     max-width: 720px
@@ -150,6 +160,47 @@
       margin: 80px 0 0 0
       font-size: 27px
       line-height: 35px
+
+  .news
+    &__container
+      flex-direction: column
+    &-publications
+      &__title
+        margin: 3px 0 22px 0
+    &-cards
+      flex-direction: column
+    &-card
+      max-width: none
+    &-aside
+      margin-top: 30px
+      padding: 20px 25px 15px 25px
+      max-width: none
+      &__button
+        margin: 15px 0 0 0
+        width: fit-content
+        display: inline-block
+        position: relative
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        text-align: center
+        &::after
+          left: -25px
+          right: -25px
+      &__link
+        width: 49%
+      &__cards
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+      &__card
+        margin: 30px 0
+        &::before
+          bottom: -31px
+        &-number
+          right: 20px
 
 @media ( max-width: 768px )
   .container
@@ -266,6 +317,23 @@
       font-size: 19px
       line-height: 30px
 
+  .news
+    &-card
+      &__img
+        margin-right: 15px
+        max-width: 180px
+      &__text
+        margin: 0
+      &__theme
+        font-size: 10px
+      &__title
+        margin: 5px 0 0 0
+        font-size: 16px
+        line-height: 20px
+      &__description
+        font-size: 13px
+        line-height: 17px
+
 @media ( max-width: 576px )
 
   .articles
@@ -333,6 +401,22 @@
       font-size: 16px
       line-height: 25px
 
+  .news
+    &-card
+      flex-direction: column-reverse
+      &__img
+        margin-top: 20px
+        margin-right: 0
+        max-width: none
+        width: 100%
+      &__title
+        margin: 10px 0 0 0
+      &__social
+        margin-top: 10px
+    &-aside
+      &__link
+        width: 100%
+
 @media ( max-width: 480px )
   .navbar
     &__hero
@@ -382,6 +466,12 @@
     font-size: 12px
     &::before
       top: 13px
+
+  .news
+    &-card
+      &__description
+        font-size: 12px
+        line-height: 16px
 
 @media ( min-width: 1200px )
   .articles
@@ -525,7 +615,7 @@
           top: -14px
           bottom: -17px
           left: -98px
-          right: -101px
+          right: -102px
           opacity: 0
           background-color: $darken-text-color
           transition: opacity 0.2s ease
