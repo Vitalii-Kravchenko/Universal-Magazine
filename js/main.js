@@ -190,4 +190,18 @@ $(document).ready(function () {
       }
     });
   });
+
+  // Favorite button
+  $('.news-card__favorite').on('click', function (e) {
+
+    if ($(this).attr('data-favorite') == 'normal') {
+      $(this).attr('src', 'img/favorite-red.svg');
+      $(this).attr('data-favorite', 'red');
+      e.preventDefault();
+    } else {
+      $(this).attr('src', 'img/favorite.svg');
+      $(this).attr('data-favorite', 'normal');
+      e.preventDefault();
+    }
+  });
 });

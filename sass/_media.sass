@@ -492,6 +492,44 @@
         &::before
           opacity: 0.3
 
+  .news
+    &-card
+      transition: background-color 0.2s ease
+      &:hover
+        background-color: darken($light-text-color, 10%)
+    &-aside
+      &__card
+        &::after
+          content: ''
+          position: absolute
+          top: -17px
+          bottom: -18px
+          left: -25px
+          right: -25px
+          opacity: 0
+          background-color: darken($light-text-color, 10%)
+          transition: opacity 0.2s ease
+          z-index: 1
+        &:hover
+          &::after
+            opacity: 1
+      &__button
+        &::before
+          content: ''
+          position: absolute
+          top: -14px
+          bottom: -17px
+          left: -98px
+          right: -101px
+          opacity: 0
+          background-color: $darken-text-color
+          transition: opacity 0.2s ease
+          border-radius: 0 0 10px 10px
+          z-index: 1
+        &:hover
+          &::before
+            opacity: 0.10
+
 @media ( max-height: 576px )
   .modal
     &__dialog
