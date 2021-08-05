@@ -2645,6 +2645,12 @@ img {
   .articles-livehack__link:hover::before {
     opacity: 0.3;
   }
+  .button-active {
+    transition: background-color 0.2s ease;
+  }
+  .button-active:hover {
+    background-color: #92bfff;
+  }
   .news-card {
     transition: background-color 0.2s ease;
   }

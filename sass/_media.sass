@@ -492,6 +492,11 @@
         &::before
           opacity: 0.3
 
+  .button-active
+    transition: background-color 0.2s ease
+    &:hover
+      background-color: lighten($active-color, 15%)
+
   .news
     &-card
       transition: background-color 0.2s ease
