@@ -1950,6 +1950,7 @@ img {
   grid-area: b;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -1959,6 +1960,7 @@ img {
   grid-area: c;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -2063,6 +2065,10 @@ img {
   align-self: flex-end;
   color: #939699;
   opacity: 1;
+}
+
+.articles-popular__link {
+  text-decoration: none;
 }
 
 .swiper-pagination-bullet {
@@ -2455,6 +2461,30 @@ img {
     margin-top: 7px;
     padding-bottom: 0;
   }
+  .articles-popular__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 170px 170px;
+    grid-gap: 30px;
+    grid-template-areas: 'd d d' 'd d d' 'a a b' 'a a c';
+  }
+  .articles-popular__slider {
+    width: 100%;
+    height: 576px;
+  }
+  .articles-popular__slide {
+    width: 950px;
+    height: 576px;
+  }
+  .articles-popular__card-img {
+    width: 623px;
+  }
+  .articles-popular__one-title {
+    max-width: 300px;
+  }
+  .articles-popular__one-description {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2600,6 +2630,32 @@ img {
   .news-aside__card-number {
     right: 20px;
   }
+  .articles-popular__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 170px 170px 170px;
+    grid-gap: 30px;
+    grid-template-areas: 'd d' 'd d' 'a a' 'a a' 'b c';
+  }
+  .articles-popular__slider {
+    width: 100%;
+    height: 570px;
+  }
+  .articles-popular__slide {
+    width: 720px;
+    height: 570px;
+  }
+  .articles-popular__card-img {
+    width: 100%;
+  }
+  .articles-popular__one-title {
+    margin-top: 90px;
+    font-size: 24px;
+    max-width: 330px;
+  }
+  .articles-popular__one-description {
+    max-width: 330px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2744,6 +2800,45 @@ img {
   .news-card__description {
     font-size: 13px;
     line-height: 17px;
+  }
+  .articles-popular__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 120px 120px 170px 170px;
+    grid-template-areas: 'd' 'd' 'a' 'a' 'b' 'c';
+  }
+  .articles-popular__slider {
+    width: 100%;
+    height: 290px;
+  }
+  .articles-popular__slider-title {
+    font-size: 22px;
+    line-height: 25px;
+    max-width: 80%;
+    top: 131px;
+  }
+  .articles-popular__slide {
+    width: 100%;
+    height: 290px;
+  }
+  .articles-popular__card-img {
+    display: none;
+  }
+  .articles-popular__one-title {
+    margin-top: 41px;
+    font-size: 24px;
+    max-width: 80%;
+  }
+  .articles-popular__one-description {
+    max-width: 80%;
+  }
+  .articles-popular__button {
+    bottom: 45px;
+  }
+  .articles-popular__user {
+    top: 20px;
+  }
+  .swiper-pagination-bullets {
+    bottom: 10px !important;
   }
 }
 
@@ -2901,6 +2996,58 @@ img {
   .news-card__img {
     height: auto;
   }
+  .articles-popular__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 290px 1fr 170px 170px;
+    grid-template-areas: 'd' 'a' 'b' 'c';
+  }
+  .articles-popular__slider {
+    width: 100%;
+    height: 290px;
+  }
+  .articles-popular__slider-title {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 90%;
+    top: 131px;
+  }
+  .articles-popular__slide {
+    width: 100%;
+    height: 290px;
+  }
+  .articles-popular__card-img {
+    display: none;
+  }
+  .articles-popular__card-one {
+    padding-bottom: 30px;
+  }
+  .articles-popular__one-title {
+    margin-top: 41px;
+    font-size: 24px;
+    max-width: 80%;
+  }
+  .articles-popular__one-description {
+    max-width: 80%;
+  }
+  .articles-popular__one-button {
+    margin: 30px 0 0 38px;
+  }
+  .articles-popular__button {
+    bottom: 45px;
+    font-size: 12px;
+    min-width: 180px;
+  }
+  .articles-popular__button::before {
+    font-size: 12px;
+    top: 9px;
+  }
+  .articles-popular__button::after {
+    font-size: 12px;
+    top: 14px;
+  }
+  .articles-popular__user {
+    top: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -3040,6 +3187,24 @@ img {
   }
   .news-aside__button:hover::before {
     opacity: 0.10;
+  }
+  .button-photo {
+    transition: background-color 0.2s ease;
+  }
+  .button-photo:hover {
+    background-color: #92bfff;
+  }
+  .articles-popular__card-two {
+    transition: background-color 0.2s ease;
+  }
+  .articles-popular__card-two:hover {
+    background-color: #d9d9d9;
+  }
+  .articles-popular__card-three {
+    transition: background-color 0.2s ease;
+  }
+  .articles-popular__card-three:hover {
+    background-color: #d9d9d9;
   }
 }
 

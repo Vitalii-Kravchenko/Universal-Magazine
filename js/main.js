@@ -224,8 +224,6 @@ $(document).ready(function () {
       delay: 5000,
     },
 
-    mousewheel: {
-      invert: false,
-    },
+    simulateTouch: false,
   });
 });
