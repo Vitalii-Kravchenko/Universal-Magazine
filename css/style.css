@@ -2390,6 +2390,9 @@ img {
     font-size: 28px;
     line-height: 35px;
   }
+  .tabs-utp__category {
+    margin-top: 0;
+  }
   .tabs-utp__button::after {
     top: 17px;
     right: 19px;
