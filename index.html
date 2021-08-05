@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="apple-touch-icon"
@@ -1254,7 +1255,110 @@
     <!-- /.news -->
 
     <section class="articles-popular">
-      <div class="container articles-popular"></div>
+      <div class="container articles-popular__container">
+        <div class="articles-popular__grid">
+          <div class="swiper-container articles-popular__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="articles-popular__slide"
+                  src="img/main/articles-popular/slide-1.jpg"
+                  alt="slide"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="articles-popular__slide"
+                  src="img/main/articles-popular/slide-2.jpg"
+                  alt="slide"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="articles-popular__slide"
+                  src="img/main/articles-popular/slide-3.jpg"
+                  alt="slide"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="articles-popular__slide"
+                  src="img/main/articles-popular/slide-4.jpg"
+                  alt="slide"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="articles-popular__slide"
+                  src="img/main/articles-popular/slide-5.jpg"
+                  alt="slide"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="articles-popular__user">
+              <img
+                class="articles-popular__user-img"
+                src="img/main/articles-popular/oksana.jpg"
+                alt="Woman"
+              />
+              <span class="articles-popular__user-name">Оксана Пушкина</span>
+              <span class="articles-popular__user-proffesion">Фотограф</span>
+            </div>
+            <h2 class="articles-popular__slider-title">
+              Выбор читателей: где удобнее работать фрилансеру
+            </h2>
+            <a class="button-photo articles-popular__button" href="#"
+              >Смотреть фото</a
+            >
+          </div>
+          <!-- /.slider -->
+          <div class="articles-popular__card-one">
+            <img
+              class="articles-popular__card-img"
+              src="img/main/articles-popular/card-1.png"
+              alt="Background Image"
+              loading="lazy"
+            />
+            <h3 class="articles-popular__one-title">
+              Вопросы на собеседовании для джуна
+            </h3>
+            <p class="articles-popular__one-description">
+              Каверзные и не очень вопросы, которых боятся новички, когда идут
+              на собеседование
+            </p>
+            <div class="tabs-utp">
+              <a
+                class="button tabs-utp__button articles-popular__one-button"
+                href="#"
+                >Читать далее</a
+              >
+            </div>
+          </div>
+          <div class="articles-popular__card-two">
+            <h4 class="articles-popular__two-title">Зарядка для глаз</h4>
+            <p class="articles-popular__two-description">
+              Эти несколько упражнений помогут сохранить зрение. Можно делать их
+              даже если...
+            </p>
+            <span class="date articles-popular__date">15 октября</span>
+          </div>
+          <div class="articles-popular__card-three">
+            <h4 class="articles-popular__three-title">Топ плагинов jQuery</h4>
+            <p class="articles-popular__three-description">
+              Какие плагины помогут быстро создать галерею, выпадающие списки
+              или окна
+            </p>
+            <span class="date articles-popular__date">14 октября</span>
+          </div>
+        </div>
+      </div>
       <!-- /.container articles-popular -->
     </section>
     <!-- /.articles-popular -->
@@ -1343,6 +1447,7 @@
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/jquery.validate.min.js"></script>
     <script defer src="js/parallax.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,172 @@
+.articles
+  &-popular
+    background-color: $dark-background
+    &__container
+      margin-top: 60px
+      padding: 60px 0
+    &__slider
+      width: 555px
+      height: 570px
+      border-radius: 10px
+      overflow: hidden
+      grid-area: d
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        z-index: 10
+        border-radius: 10px
+      &-title
+        margin: 0
+        +Roboto-Slab(40px)
+        color: $light-text-color
+        z-index: 11
+        position: absolute
+        top: 171px
+        left: 50%
+        transform: translateX(-50%)
+        width: 450px
+        line-height: 50px
+        text-align: center
+    &__slide
+      width: 555px
+      height: 570px
+      position: relative
+      object-fit: cover
+    &__grid
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr
+      grid-gap: 30px
+      grid-template-areas: 'd d a a' 'd d a a' 'd d b c'
+    &__user
+      z-index: 11
+      position: absolute
+      top: 50px
+      left: 50%
+      transform: translateX(-50%)
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-img
+        width: 45px
+        height: 45px
+        border-radius: 50%
+      &-name
+        margin: 11px 0 5px
+        +Lato(14px)
+        color: $light-text-color
+        opacity: 0.85
+      &-proffesion
+        +Lato(12px)
+        color: $light-text-color
+        opacity: 0.40
+    &__card
+      position: relative
+      &-one
+        grid-area: a
+        border-radius: 10px
+        position: relative
+        background-color: #B4D1E0
+      &-two
+        padding: 25px 25px 30px 25px
+        grid-area: b
+        display: flex
+        flex-wrap: wrap
+        background-color: $light-text-color
+        border-radius: 10px
+      &-three
+        padding: 25px 25px 30px 25px
+        grid-area: c
+        display: flex
+        flex-wrap: wrap
+        background-color: $light-text-color
+        border-radius: 10px
+      &-img
+        position: absolute
+        width: 555px
+        height: 370px
+        object-fit: cover
+        z-index: 5
+    &__one
+      &-title
+        margin: 72px 0 0 35px
+        position: relative
+        +Roboto-Slab(25px)
+        color: $darken-text-color
+        max-width: 243px
+        line-height: 30px
+        z-index: 15
+      &-description
+        position: relative
+        margin: 14px 0 0 35px
+        +Lato(14px)
+        color: $dark-text-color
+        max-width: 213px
+        line-height: 20px
+        z-index: 15
+      &-button
+        position: relative
+        margin: 44px 0 0 38px
+        z-index: 15
+    &__two
+      &-title
+        margin: 4px 0 0 0
+        +Roboto-Slab(16px)
+        color: $darken-text-color
+      &-description
+        margin: 4px 0 0 0
+        +Lato(14px)
+        color: $dark-text-color
+        line-height: 20px
+    &__three
+      &-title
+        margin: 4px 0 0 0
+        +Roboto-Slab(16px)
+        color: $darken-text-color
+      &-description
+        margin: 4px 0 0 0
+        +Lato(14px)
+        color: $dark-text-color
+        line-height: 20px
+    &__button
+      padding: 13px 20px 11px 48px
+      position: absolute
+      bottom: 165px
+      min-width: 193px
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 11
+      &::before
+        content: ''
+        position: absolute
+        top: 10px
+        left: 19px
+        width: 21px
+        height: 20px
+        background: url('../img/img.svg')
+      &::after
+        content: '26'
+        position: absolute
+        top: 13px
+        right: 21px
+        +Lato(14px)
+        color: $light-text-color
+    &__date
+      align-self: flex-end
+      color: #939699
+      opacity: 1
+
+.swiper-pagination-bullet
+  margin: 0 8px !important
+  width: 8px
+  height: 8px
+  background-color: $light-text-color
+  border-radius: 50%
+
+.swiper-pagination-bullets
+  bottom: 42px !important

@@ -204,4 +204,28 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+
+  // Slider in articles-popular
+  var hotelSlider = new Swiper('.articles-popular__slider', {
+
+    // Optional parameters
+    loop: true,
+
+    keyboard: {
+      enabled: true,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    mousewheel: {
+      invert: false,
+    },
+  });
 });
