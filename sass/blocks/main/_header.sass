@@ -97,9 +97,8 @@
     display: flex
     visibility: visible
     padding: 55px 55px 100px 55px
+    flex-wrap: wrap
     width: 877px
-    flex-direction: column
-    justify-content: space-between
     object-fit: cover
     &__background
       position: absolute
@@ -133,6 +132,7 @@
     &__user
       display: flex
       position: relative
+      flex-basis: 100%
     &__text
       margin-top: 7px
       display: flex
@@ -148,6 +148,7 @@
       opacity: 0.4
   &-utp
     position: relative
+    align-self: flex-end
     &__category
       +Lato(12px)
       margin-bottom: 21px
