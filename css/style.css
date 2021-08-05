@@ -2581,6 +2581,7 @@ img {
     margin-right: 0;
     max-width: none;
     width: 100%;
+    height: 200px;
   }
   .news-card__title {
     margin: 10px 0 0 0;
@@ -2649,6 +2650,9 @@ img {
   .news-card__description {
     font-size: 12px;
     line-height: 16px;
+  }
+  .news-card__img {
+    height: auto;
   }
 }
 
