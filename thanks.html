@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="apple-touch-icon"
@@ -90,7 +91,7 @@
           <a class="navbar__logo" href="./index.html">
             <img
               class="navbar__logo-img"
-              src="img/main/header/nav/navbar-logo.svg"
+              src="img/main/header/nav/navbar-logo.png"
               alt="Logo"
             />
           </a>
@@ -236,6 +237,20 @@
         <div class="navbar__hero">
           <div class="tabs">
             <div class="tabs-item tabs-item--hidden" data-tabs="1">
+              <picture class="logotip">
+                <source
+                  class="tabs-item__background"
+                  media="(max-width: 480px)"
+                  srcset="img/main/header/hero/css-one-x432.jpg"
+                />
+                <img
+                  class="tabs-item__background"
+                  src="img/main/header/hero/css-one.jpg"
+                  alt="Background Image"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="tabs-item__background-gradient"></div>
               <div class="tabs-item__user">
                 <img
                   class="tabs-item__img"
@@ -265,6 +280,19 @@
               </div>
             </div>
             <div class="tabs-item" data-tabs="2">
+              <picture class="logotip">
+                <source
+                  class="tabs-item__background"
+                  media="(max-width: 480px)"
+                  srcset="img/main/header/hero/java-script-x432.jpg"
+                />
+                <img
+                  class="tabs-item__background"
+                  src="img/main/header/hero/java-script.jpg"
+                  alt="Background Image"
+                />
+              </picture>
+              <div class="tabs-item__background-gradient"></div>
               <div class="tabs-item__user">
                 <img
                   class="tabs-item__img"
@@ -287,6 +315,20 @@
               </div>
             </div>
             <div class="tabs-item tabs-item--hidden" data-tabs="3">
+              <picture class="logotip">
+                <source
+                  class="tabs-item__background"
+                  media="(max-width: 480px)"
+                  srcset="img/main/header/hero/html-x432.jpg"
+                />
+                <img
+                  class="tabs-item__background"
+                  src="img/main/header/hero/html.jpg"
+                  alt="Background Image"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="tabs-item__background-gradient"></div>
               <div class="tabs-item__user">
                 <img
                   class="tabs-item__img"
@@ -309,6 +351,20 @@
               </div>
             </div>
             <div class="tabs-item tabs-item--hidden" data-tabs="4">
+              <picture class="logotip">
+                <source
+                  class="tabs-item__background"
+                  media="(max-width: 480px)"
+                  srcset="img/main/header/hero/web-design-x432.jpg"
+                />
+                <img
+                  class="tabs-item__background"
+                  src="img/main/header/hero/web-design.jpg"
+                  alt="Background Image"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="tabs-item__background-gradient"></div>
               <div class="tabs-item__user">
                 <img
                   class="tabs-item__img"
@@ -329,6 +385,20 @@
               </div>
             </div>
             <div class="tabs-item tabs-item--hidden" data-tabs="5">
+              <picture class="logotip">
+                <source
+                  class="tabs-item__background"
+                  media="(max-width: 480px)"
+                  srcset="img/main/header/hero/css-two-x432.jpg"
+                />
+                <img
+                  class="tabs-item__background"
+                  src="img/main/header/hero/css-two.jpg"
+                  alt="Background Image"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="tabs-item__background-gradient"></div>
               <div class="tabs-item__user">
                 <img
                   class="tabs-item__img"
@@ -416,6 +486,202 @@
         >
       </div>
     </section>
+    <section class="footer">
+      <div class="container footer__container">
+        <div class="footer-newsletter">
+          <h2 class="footer-newsletter__title">Подпишитесь на нашу рассылку</h2>
+          <form class="footer-newsletter__form" action="send.php" method="POST">
+            <input
+              type="text"
+              class="footer-newsletter__input"
+              placeholder="Email"
+              type="email"
+              name="newsletter"
+              required
+            />
+            <button class="button footer-newsletter__button">
+              Подписаться
+            </button>
+          </form>
+        </div>
+        <!-- /.footer-newsletter -->
+        <div class="footer-content">
+          <div class="footer-content__line">
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+          </div>
+          <div class="footer-lists">
+            <ul class="footer-lists__ul">
+              <h4 class="footer-lists__ul-title">Новости</h4>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Обновления</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Экспресс</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Politics</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Solar Eclipse</li>
+              </a>
+            </ul>
+            <ul class="footer-lists__ul">
+              <h4 class="footer-lists__ul-title">Статьи</h4>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">HTML</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">CSS</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">JavaScript</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Web Design</li>
+              </a>
+            </ul>
+            <ul class="footer-lists__ul">
+              <h4 class="footer-lists__ul-title">Видеоуроки</h4>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Скринкасты</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Уроки</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Вебинары</li>
+              </a>
+            </ul>
+            <ul class="footer-lists__ul">
+              <h4 class="footer-lists__ul-title">Курсы</h4>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Платные интенсивы</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Бесплатные стримы</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Мастер-классы</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Менторство</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Буткемпы</li>
+              </a>
+            </ul>
+            <ul class="footer-lists__ul">
+              <h4 class="footer-lists__ul-title">Информация</h4>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Политика данных</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Оферта сайта</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Реквизиты</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Контакты</li>
+              </a>
+            </ul>
+            <ul class="footer-lists__ul">
+              <h4 class="footer-lists__ul-title">Категории</h4>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Популярное</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Горячее</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Подборки</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Мнения</li>
+              </a>
+              <a class="footer-lists__link" href="#">
+                <li class="footer-lists__ul-item">Карьера</li>
+              </a>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <div class="footer-social__text">
+              <a class="footer-social__logo-link" href="index.html">
+                <img
+                  class="footer-social__logo"
+                  src="img/footer-logo.png"
+                  alt="Logo"
+                />
+              </a>
+              <ul class="footer-social__list">
+                <a class="footer-social__list-link" href="#">
+                  <li class="footer-social__list-item">Контакты</li>
+                </a>
+                <a class="footer-social__list-link" href="#">
+                  <li class="footer-social__list-item">Работа у нас</li>
+                </a>
+                <a class="footer-social__list-link" href="#">
+                  <li class="footer-social__list-item">Реклама</li>
+                </a>
+                <a class="footer-social__list-link" href="#">
+                  <li class="footer-social__list-item">Обратная связь</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer-social__icon">
+              <a class="footer-social__icon-link" href="#">
+                <img
+                  class="footer-social__icon-item"
+                  src="img/facebook.svg"
+                  alt="Icon: Facebook"
+                />
+              </a>
+              <a class="footer-social__icon-link" href="#">
+                <img
+                  class="footer-social__icon-item"
+                  src="img/twitter.svg"
+                  alt="Icon: Twitter"
+                />
+              </a>
+              <a class="footer-social__icon-link" href="#">
+                <img
+                  class="footer-social__icon-item"
+                  src="img/youtube.svg"
+                  alt="Icon: YouTube"
+                />
+              </a>
+              <a class="footer-social__icon-link" href="#">
+                <img
+                  class="footer-social__icon-item"
+                  src="img/instagram.svg"
+                  alt="Icon: Instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p class="footer-copyright__text">
+              Universal — это онлайн издание, в котором мы публикуем полезные
+              материалы о веб разработке: статьи, новости, видеоуроки, подборки,
+              ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+              указывайте ссылку.
+            </p>
+            <span class="footer-copyright__item"
+              >© 2020 Universal Magazine</span
+            >
+          </div>
+        </div>
+        <!-- /.footer-content -->
+      </div>
+      <!-- /.container footer-container -->
+    </section>
+    <!-- /.footer -->
+
     <div class="modal">
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
@@ -425,7 +691,12 @@
           <div class="modal-theme">
             <h4 class="modal-theme__title">Тема</h4>
             <select class="modal-theme__select" name="theme" required>
-              <option class="modal-theme__item" value="" disabled selected>
+              <option
+                class="modal-theme__item modal-theme__item-first"
+                value=""
+                disabled
+                selected
+              >
                 Выберите тему
               </option>
               <option class="modal-theme__item" value="Статьи">Статьи</option>
@@ -491,8 +762,11 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/parallax.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
   </body>
 </html>
