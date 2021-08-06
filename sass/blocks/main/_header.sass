@@ -1,12 +1,13 @@
 .navbar
   background-color: $dark-background
   &__container
-    min-height: 545px
+    min-height: 475px
   &__nav
     display: flex
     justify-content: space-between
     align-items: center
     min-height: 70px
+    background-color: $dark-background
   &__logo
     width: 163px
     height: 40px
@@ -34,9 +35,6 @@
     transition: background-color 0.2s ease
     outline: none
   &-burger
-    position: absolute
-    top: 25px
-    right: 22px
     display: none
     width: 26px
     height: 21px
@@ -374,3 +372,10 @@
     display: inline-block
     width: fit-content
     text-decoration: none
+
+.nav
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%

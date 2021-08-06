@@ -131,7 +131,6 @@ $(document).ready(function () {
   });
 
   function burgerOpen() {
-    $('.navbar-burger').css('position', 'fixed');
     if ($('body').css("overflow") == "hidden") {
       $('body').css({
         "overflow": "auto"
@@ -160,7 +159,6 @@ $(document).ready(function () {
   }
 
   function burgerClose() {
-    $('.navbar-burger').css('position', 'absolute');
     if ($('body').css("overflow") == "hidden") {
       $('body').css({
         "overflow": "auto"

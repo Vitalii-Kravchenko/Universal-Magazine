@@ -86,8 +86,8 @@
   </head>
   <body>
     <header class="navbar">
-      <div class="container navbar__container">
-        <nav class="nav navbar__nav">
+      <nav class="nav navbar__nav">
+        <div class="container nav__container">
           <a class="navbar__logo" href="./index.html">
             <img
               class="navbar__logo-img"
@@ -116,7 +116,7 @@
               <a
                 class="nav-list__link navbar-list__link"
                 href="#"
-                data-scroll="hot-news"
+                data-scroll="articles-popular"
                 >Горячее</a
               >
             </li>
@@ -161,77 +161,79 @@
             <span class="navbar-burger__item"></span>
             <span class="navbar-burger__item"></span>
           </div>
-        </nav>
-        <div class="burger-modal">
-          <div class="container">
-            <div class="burger-modal__wrapper">
-              <ul class="nav-list navbar-list navbar-list--visible">
-                <li class="nav-list__item navbar-list__item">
-                  <a
-                    class="nav-list__link navbar-list__link"
-                    href="#"
-                    data-scroll="articles"
-                    >Статьи</a
-                  >
-                </li>
-                <li class="nav-list__item navbar-list__item">
-                  <a
-                    class="nav-list__link navbar-list__link"
-                    href="#"
-                    data-scroll="news"
-                    >Новости</a
-                  >
-                </li>
-                <li class="nav-list__item navbar-list__item">
-                  <a
-                    class="nav-list__link navbar-list__link"
-                    href="#"
-                    data-scroll="hot-news"
-                    >Горячее</a
-                  >
-                </li>
-                <li class="nav-list__item navbar-list__item">
-                  <a
-                    class="nav-list__link navbar-list__link"
-                    href="#"
-                    data-scroll="footer"
-                    >HTML</a
-                  >
-                </li>
-                <li class="nav-list__item navbar-list__item">
-                  <a
-                    class="nav-list__link navbar-list__link"
-                    href="#"
-                    data-scroll="footer"
-                    >CSS</a
-                  >
-                </li>
-                <li class="nav-list__item navbar-list__item">
-                  <a
-                    class="nav-list__link navbar-list__link"
-                    href="#"
-                    data-scroll="footer"
-                    >JavaScript</a
-                  >
-                </li>
-                <li class="nav-list__item navbar-list__item">
-                  <a
-                    class="nav-list__link navbar-list__link"
-                    href="#"
-                    data-scroll="footer"
-                    >Web Design</a
-                  >
-                </li>
-              </ul>
-              <button
-                class="navbar__button navbar__button--visible"
-                data-open="modal"
-              >
-                Оставить заявку
-              </button>
-            </div>
+        </div>
+      </nav>
+      <div class="burger-modal">
+        <div class="container">
+          <div class="burger-modal__wrapper">
+            <ul class="nav-list navbar-list navbar-list--visible">
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="articles"
+                  >Статьи</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="news"
+                  >Новости</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="articles-popular"
+                  >Горячее</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >HTML</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >CSS</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >JavaScript</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >Web Design</a
+                >
+              </li>
+            </ul>
+            <button
+              class="navbar__button navbar__button--visible"
+              data-open="modal"
+            >
+              Оставить заявку
+            </button>
           </div>
         </div>
+      </div>
+      <div class="container navbar__container">
         <!-- /.nav navbar__nav -->
         <!-- /.navbar-burger -->
         <div class="navbar__hero">
