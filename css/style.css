@@ -556,6 +556,20 @@ img {
   color: #AC8EE3;
 }
 
+.arrow-up {
+  cursor: pointer;
+  display: none;
+}
+
+.arrow-up__item {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 200;
+}
+
 .navbar {
   background-color: #262D33;
 }
@@ -2932,6 +2946,10 @@ img {
   .articles-popular__one-description {
     max-width: 330px;
   }
+  .arrow-up__item {
+    right: 40px;
+    bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3130,6 +3148,12 @@ img {
   .swiper-pagination-bullets {
     bottom: 10px !important;
   }
+  .arrow-up__item {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3260,6 +3284,12 @@ img {
   }
   .articles-popular__user {
     top: 20px;
+  }
+  .arrow-up__item {
+    width: 35px;
+    height: 35px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 

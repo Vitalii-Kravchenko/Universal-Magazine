@@ -247,4 +247,19 @@ $(document).ready(function () {
 
     simulateTouch: false,
   });
+
+  // Arrow Up Scroll
+  $(document).on('scroll', function () {
+    if ($('html, body').scrollTop() > 1600) {
+      $('.arrow-up').css('display', 'block');
+    } else {
+      $('.arrow-up').css('display', 'none');
+    }
+  });
+
+  $('.arrow-up').on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500);
+  });
 });
