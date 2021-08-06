@@ -1,0 +1,48 @@
+.footer
+  &__container
+    padding-top: 63px
+    padding-bottom: 60px
+  &-newsletter
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+      margin: 0
+      +Roboto-Slab(40px)
+      color: $darken-text-color
+    &__form
+      position: relative
+      padding-top: 26px
+      display: flex
+      justify-content: space-between
+    &__button
+      padding: 13px 25px 11px 26px
+      text-decoration: none
+    &__input
+      position: relative
+      margin-right: 12px
+      padding: 10px 15px
+      width: 313px
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      outline: none
+      z-index: 2
+      +Lato(14px)
+      opacity: 1
+      color: $darken-text-color
+      &::placeholder
+        +Lato(14px)
+        color: #939699
+        opacity: 1
+
+#newsletter-error
+  padding: 9px 9px 4px 9px
+  position: absolute
+  top: 60px
+  left: 1px
+  right: 147px
+  +Lato(11px)
+  color: $light-text-color
+  background-color: $active-color
+  border-radius: 0 0 4px 4px
+  z-index: 1

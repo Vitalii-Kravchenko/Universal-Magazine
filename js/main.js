@@ -81,6 +81,16 @@ $(document).ready(function () {
     },
   });
 
+  $(".footer-newsletter__form").validate({
+    errorClass: "footer-newsletter__validate-error",
+    messages: {
+      newsletter: {
+        required: "Напишите email адрес.",
+        email: "Формат для email адреса - name@domain.com",
+      },
+    },
+  });
+
   $('.modal-checkbox__input').on('click', function (e) {
     if ($('.modal-checkbox__input').is(":checked")) {
       $('.modal-checkbox__label').addClass('modal-checkbox__label--active');
@@ -91,6 +101,7 @@ $(document).ready(function () {
 
   // Fix many message *fast press button
 
+
   $('.modal__send').on('click', function () {
     setTimeout(function () {
       $('.modal__send').attr("disabled", "disabled");
@@ -98,6 +109,16 @@ $(document).ready(function () {
 
     setTimeout(function () {
       $('.modal__send').removeAttr("disabled");
+    }, 5000);
+  });
+
+  $('.footer-newsletter__button').on('click', function () {
+    setTimeout(function () {
+      $('.footer-newsletter__button').attr("disabled", "disabled");
+    }, 50);
+
+    setTimeout(function () {
+      $('.footer-newsletter__button').removeAttr("disabled");
     }, 5000);
   });
 
