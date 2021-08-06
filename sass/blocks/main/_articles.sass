@@ -4,7 +4,7 @@
   &-cards
     height: auto
     display: grid
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    grid-template: auto 170px auto auto / 1fr 1fr 1fr 1fr
     grid-template-areas: 'one one two check' 'one one two tags' 'three four five tags' 'three six seven social'
     grid-gap: 30px
   &-one
@@ -13,6 +13,9 @@
     grid-area: one
     border-radius: 10px
     background-color: $light-text-color
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     &::before
       content: ''
       position: absolute
@@ -236,11 +239,14 @@
         &:nth-child(2)
           margin: 0 6px 0 0
   &-three
-    padding-bottom: 11px
+    padding-bottom: 30px
     position: relative
     grid-area: three
     border-radius: 10px
     background-color: $light-text-color
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     &__img
       width: 263px
       height: 275px
@@ -248,7 +254,7 @@
       overflow: hidden
       object-fit: cover
     &__title
-      margin: 11px 25px 0 25px
+      margin: 4px 25px 0 25px
       +Roboto-Slab(16px)
       color: $darken-text-color
       line-height: 25px
