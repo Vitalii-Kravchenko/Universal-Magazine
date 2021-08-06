@@ -611,10 +611,14 @@ img {
 }
 
 .navbar-burger {
+  position: absolute;
+  top: 25px;
+  right: 22px;
   display: none;
   width: 26px;
   height: 21px;
   cursor: pointer;
+  z-index: 170;
 }
 
 .navbar-burger__item {
@@ -910,15 +914,17 @@ img {
 }
 
 .burger-modal {
+  padding-top: 70px;
   display: none;
   position: fixed;
-  top: 70px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   transform: translateX(150vh);
   visibility: hidden;
   background-color: #282F36;
+  z-index: 169;
 }
 
 .burger-modal--visible {
@@ -2098,7 +2104,7 @@ img {
 }
 
 .modal {
-  z-index: 170;
+  z-index: 172;
 }
 
 .modal__overlay {
@@ -2110,7 +2116,7 @@ img {
   right: 0;
   background-color: #282F36;
   opacity: 0;
-  z-index: 165;
+  z-index: 172;
 }
 
 .modal__overlay--visible {
@@ -2131,7 +2137,7 @@ img {
   left: 50%;
   transform: translate(-50%, -150vh);
   height: 530px;
-  z-index: 170;
+  z-index: 172;
   display: flex;
   flex-direction: column;
   width: 360px;
@@ -2554,7 +2560,6 @@ img {
   }
   .burger-modal {
     display: block;
-    z-index: 160;
   }
   .thanks {
     padding-top: 400px;

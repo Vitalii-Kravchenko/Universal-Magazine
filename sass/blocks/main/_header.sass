@@ -34,10 +34,14 @@
     transition: background-color 0.2s ease
     outline: none
   &-burger
+    position: absolute
+    top: 25px
+    right: 22px
     display: none
     width: 26px
     height: 21px
     cursor: pointer
+    z-index: 170
     &__item
       width: 26px
       height: 3px
@@ -243,15 +247,17 @@
       overflow: hidden
 
 .burger-modal
+  padding-top: 70px
   display: none
   position: fixed
-  top: 70px
+  top: 0
   bottom: 0
   left: 0
   right: 0
   transform: translateX(150vh)
   visibility: hidden
   background-color: #282F36
+  z-index: 169
   &--visible
     transform: translateX(0)
     visibility: visible
