@@ -7,10 +7,11 @@ $(document).ready(function () {
     }, 1500);
   }
 
-  $('.navbar-list__link').on('click', function (e) {
+  $('.nav-list__link').on('click', function (e) {
     e.preventDefault();
     if ($('.navbar-burger').attr('data-burger') == 'close') {
       burgerClose();
+
       setTimeout(function () {
         scrollTo($(e.target).attr('data-scroll'));
       }, 1000);
