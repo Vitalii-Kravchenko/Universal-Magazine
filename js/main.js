@@ -4,21 +4,19 @@ $(document).ready(function () {
   function scrollTo(classOfName) {
     $('html, body').animate({
       scrollTop: $("." + classOfName).offset().top - 40
-    }, 1000);
+    }, 1500);
   }
 
   $('.navbar-list__link').on('click', function (e) {
+    e.preventDefault();
     if ($('.navbar-burger').attr('data-burger') == 'close') {
       burgerClose();
       setTimeout(function () {
-        e.preventDefault();
         scrollTo($(e.target).attr('data-scroll'));
       }, 1000);
     } else if ($('.navbar-burger').attr('data-burger') == 'open') {
-      e.preventDefault();
       scrollTo($(e.target).attr('data-scroll'));
     }
-
   });
 
   // Modal
