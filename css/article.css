@@ -558,7 +558,6 @@ img {
 .arrow-up {
   cursor: pointer;
   display: none;
-  opacity: 0;
 }
 
 .arrow-up__item {
@@ -1502,7 +1501,7 @@ img {
   right: 2px;
   display: flex;
   align-items: center;
-  z-index: 6;
+  z-index: 8;
 }
 
 .navbar-hero__nav-img:nth-child(1) {
@@ -1559,11 +1558,12 @@ img {
   width: 14px;
   height: 14px;
   z-index: 6;
+  opacity: 0.6;
 }
 
 .date__counter {
   color: #ffffff;
-  opacity: 0.85;
+  opacity: 0.9;
   z-index: 6;
 }
 
@@ -1574,7 +1574,7 @@ img {
 }
 
 .comments__counter {
-  opacity: 0.85;
+  opacity: 0.9;
   z-index: 6;
 }
 
@@ -1585,7 +1585,7 @@ img {
 }
 
 .like__counter {
-  opacity: 0.85;
+  opacity: 0.9;
   z-index: 6;
 }
 
@@ -1787,6 +1787,7 @@ img {
 
 .footer-social__list-link {
   text-decoration: none;
+  color: #262D33;
 }
 
 .footer-social__list-item {
@@ -1796,7 +1797,6 @@ img {
   font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #262D33;
 }
 
 .footer-social__icon {

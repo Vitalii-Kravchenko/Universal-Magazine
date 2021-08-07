@@ -559,7 +559,6 @@ img {
 .arrow-up {
   cursor: pointer;
   display: none;
-  opacity: 0;
 }
 
 .arrow-up__item {
@@ -2613,6 +2612,7 @@ img {
 
 .footer-social__list-link {
   text-decoration: none;
+  color: #262D33;
 }
 
 .footer-social__list-item {
@@ -2622,7 +2622,6 @@ img {
   font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #262D33;
 }
 
 .footer-social__icon {

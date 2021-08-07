@@ -256,14 +256,13 @@ $(document).ready(function () {
   $(document).on('scroll', function () {
     if ($('html, body').scrollTop() > 1600) {
       if ($('.arrow-up').css('display') == 'none') {
-        $('.arrow-up').css('opacity', '1');
-        $('.arrow-up').fadeIn(1000);
+        $('.arrow-up').fadeIn(700);
       } else {
 
       }
     } else {
       if ($('.arrow-up').css('display') != 'none') {
-        $('.arrow-up').fadeOut(1000);
+        $('.arrow-up').fadeOut(700);
       } else {
 
       }
