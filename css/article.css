@@ -1715,6 +1715,7 @@ img {
   margin: 0 0 30px 0;
   font-family: "Lato", 'Helvetica', sans-serif;
   font-size: 14px;
+  font-weight: 600;
   color: #262D33;
 }
 
@@ -1727,6 +1728,7 @@ img {
 
 .footer-lists__link {
   text-decoration: none;
+  color: #4B5157;
 }
 
 .footer-social {
