@@ -1,11 +1,145 @@
 .navbar
+  &__container
+    padding-bottom: 70px
+    max-width: 945px
+    position: relative
   &__nav
     background-color: $light-text-color
   &-burger
     &__item
       background-color: #939699
+  &-hero
+    position: relative
+    min-height: 590px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+      z-index: 5
+    &__background
+      &-img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        object-fit: cover
+        height: 100%
+    &__text
+      padding-top: 65px
+      display: flex
+      flex-direction: column
+      &-theme
+        +Lato(11px)
+        font-weight: 900
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $active-color
+        z-index: 6
+      &-title
+        margin: 53px 0 0 0
+        max-width: 750px
+        +Roboto-Slab(55px)
+        line-height: 70px
+        color: $light-text-color
+        z-index: 6
+      &-description
+        margin: 32px 0 0 0
+        max-width: 632px
+        +Lato(18px)
+        color: $light-text-color
+        line-height: 30px
+        z-index: 6
+        opacity: 0.85
+    &__social
+      margin-top: 39px
+      z-index: 6
+      display: flex
+      &-date
+        margin-right: 21px
+      &-like
+        margin-right: 21px
+      &-comments
+        position: relative
+        top: 1px
+    &__nav
+      position: absolute
+      top: 62px
+      right: 2px
+      display: flex
+      align-items: center
+      z-index: 6
+      &-img
+        &:nth-child(1)
+          position: relative
+          top: -1px
+          width: 18px
+          height: 17px
+        &:nth-child(3)
+          margin-left: 33px
+          width: 15px
+          height: 17px
+        &:nth-child(6)
+          margin-left: 9px
+          width: 15px
+          height: 17px
+      &-link
+        color: $light-text-color
+        +Lato(14px)
+        text-decoration: none
+        &:nth-child(2)
+          margin-left: 6px
+        &:nth-child(4)
+          margin-left: 9px
+        &:nth-child(5)
+          margin-left: 22px
 
 .nav
   &-list
     &__link
       color: #939699
+
+.date
+  z-index: 6
+  opacity: 1
+  &__img
+    margin-right: 2px
+    position: relative
+    top: 2px
+    width: 14px
+    height: 14px
+    z-index: 6
+  &__counter
+    color: $light-text-color
+    opacity: 0.85
+    z-index: 6
+
+.comments
+  &__img
+    width: 14px
+    height: 14px
+    z-index: 6
+  &__counter
+    opacity: 0.85
+    z-index: 6
+
+.like
+  &__img
+    width: 14px
+    height: 14px
+    z-index: 6
+  &__counter
+    opacity: 0.85
+    z-index: 6
+
+.favorite
+  width: 21px
+  height: 27px
+  position: absolute
+  top: 152px
+  left: -93px
+  z-index: 6
+  cursor: pointer

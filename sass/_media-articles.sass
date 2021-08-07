@@ -1,9 +1,87 @@
+@media ( max-width: 1200px )
+  .navbar
+    &-hero
+      &__text
+        &-title
+          margin: 65px 0 0 0
+
+  .favorite
+    top: 103px
+    left: 0
+
 @media ( max-width: 992px )
   .navbar
     &-list
       &__link
         color: #939699
+    &-hero
+      margin-top: 70px
+      &__text
+        &-title
+          font-size: 50px
+
+    &__nav
+      top: 0
 
   .burger
     &-modal
       background-color: $light-text-color
+
+@media ( max-width: 768px )
+  .navbar
+    &__container
+      padding-bottom: 55px
+    &-hero
+      min-height: 450px
+      &__text
+        &-title
+          font-size: 35px
+          line-height: 50px
+        &-description
+          font-size: 16px
+          line-height: 26px
+
+@media ( max-width: 576px )
+  .navbar
+    &-hero
+      &__text
+        &-title
+          font-size: 30px
+          line-height: 40px
+        &-description
+          font-size: 15px
+          line-height: 22px
+
+@media ( max-width: 480px )
+  .navbar
+    &__container
+      padding-bottom: 130px
+    &-hero
+      &__text
+        &-title
+          font-size: 21px
+          line-height: 30px
+        &-description
+          font-size: 14px
+      &__nav
+        top: auto
+        bottom: 40px
+        left: 0
+        &-link
+          &:nth-child(2)
+            width: 78px
+
+  .favorite
+    right: 5px
+    top: 55px
+    left: auto
+    z-index: 7
+
+@media ( min-width: 992px )
+  .navbar
+    &-hero
+      &__nav
+        &-link
+          transition: color 0.2s ease
+          &:hover
+            color: $active-color

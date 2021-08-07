@@ -217,7 +217,7 @@ $(document).ready(function () {
   });
 
   // Favorite button
-  $('.news-card__favorite').on('click', function (e) {
+  $('.favorite').on('click', function (e) {
 
     if ($(this).attr('data-favorite') == 'normal') {
       $(this).attr('src', 'img/favorite-red.svg');
