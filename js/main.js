@@ -48,6 +48,11 @@ $(document).ready(function () {
     }
   });
 
+  $('.footer-social__list-link').on('click', function (event) {
+    event.preventDefault();
+    openModal();
+  });
+
   $(document).on('keydown', function (event) {
     if (event.keyCode == 27) {
       closeModal(event);
