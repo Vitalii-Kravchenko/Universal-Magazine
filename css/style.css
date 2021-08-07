@@ -3367,7 +3367,7 @@ img {
     line-height: 16px;
   }
   .news-card__img {
-    height: auto;
+    height: 200px;
   }
   .articles-popular__grid {
     grid-template-columns: 1fr;
