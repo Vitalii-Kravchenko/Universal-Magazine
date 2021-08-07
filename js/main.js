@@ -236,10 +236,6 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
 
-    keyboard: {
-      enabled: true,
-    },
-
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -247,6 +243,24 @@ $(document).ready(function () {
 
     autoplay: {
       delay: 5000,
+    },
+
+    simulateTouch: false,
+  });
+
+  // Slider in Article
+  var articleSlider = new Swiper('.article__slider-container', {
+
+    // Optional parameters
+    loop: true,
+
+    keyboard: {
+      enabled: true,
+    },
+
+    navigation: {
+      nextEl: '.article__slider-button--next',
+      prevEl: '.article__slider-button--prev',
     },
 
     simulateTouch: false,

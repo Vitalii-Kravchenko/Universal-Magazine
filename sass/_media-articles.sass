@@ -9,6 +9,18 @@
     top: 103px
     left: 0
 
+  .article
+    &-text
+      margin-left: 0
+    &-author
+      right: 30px
+    &-material
+      right: 0
+    &-tags
+      margin-left: 0
+    &-repost
+      margin-left: 0
+
 @media ( max-width: 992px )
   .navbar
     &-list
@@ -27,6 +39,23 @@
     &-modal
       background-color: $light-text-color
 
+  .article
+    &__container
+      padding-top: 252px
+    &-material
+      margin-bottom: 30px
+      margin-right: 30px
+      position: relative
+      float: left
+      top: 0
+    &-text
+      &__item
+        &--margin
+          margin-top: 54px
+    &-repost
+      &::before
+        right: 230px
+
 @media ( max-width: 768px )
   .navbar
     &__container
@@ -41,6 +70,47 @@
           font-size: 16px
           line-height: 26px
 
+  .article
+    &__container
+      padding-top: 410px
+    &-repost
+      &::before
+        right: 0
+    &-author
+      top: 55px
+      right: 50%
+      transform: translateX(50%)
+    &__slider
+      &-button
+        width: 45px
+        height: 45px
+        background-size: 45px
+      &-container
+        height: 440px
+    &-slider
+      &__text
+        padding: 16px 33px 16px 33px
+        flex-wrap: wrap
+        &-item
+          margin-right: 0
+          padding-right: 0
+          position: relative
+          &::after
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            bottom: -16px
+            height: 1px
+            background-color: #D9DADB
+      &__user
+        margin-top: 32px
+        margin-left: 0
+        &::before
+          display: none
+    &-material
+      float: none
+
 @media ( max-width: 576px )
   .navbar
     &-hero
@@ -51,6 +121,26 @@
         &-description
           font-size: 15px
           line-height: 22px
+
+  .article
+    &-text
+      &__item
+        font-size: 16px
+      &__title
+        font-size: 24px
+    &__slider
+      &-container
+        height: 320px
+      &-button
+        width: 35px
+        height: 35px
+        background-size: 35px
+    &-slider
+      min-height: auto
+    &-tags
+      &__item
+        margin-bottom: 15px
+        display: inline-block
 
 @media ( max-width: 480px )
   .navbar
@@ -77,11 +167,60 @@
     left: auto
     z-index: 7
 
+  .article
+    &-text
+      &__item
+        font-size: 14px
+        line-height: 25px
+    &-slider
+      &__text
+        padding: 20px
+        &-item
+          font-size: 13px
+          line-height: 20px
+          text-align: justify
+    &-repost
+      &__title
+        font-size: 24px
+        text-align: center
+      &__button
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        &-item
+          margin-bottom: 20px
+
 @media ( min-width: 992px )
   .navbar
     &-hero
       &__nav
         &-link
-          transition: color 0.2s ease
+          transition: color 0.3s ease
           &:hover
             color: $active-color
+
+  .article
+    &-author
+      &__link
+        transition: background-color 0.3s ease, color 0.3s ease
+        &:hover
+          background-color: $active-color
+          color: $light-text-color
+    &-material
+      cursor: pointer
+      transition: background-color 0.3s ease, color 0.3s ease
+      &:hover
+        background-color: darken($light-text-color, 7%)
+    &-tags
+      &__item
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease
+        &:hover
+          background-color: $active-color
+          color: $light-text-color
+          border-color: $active-color
+    &-repost
+      &__button
+        &-item
+          transition: background-color 0.3s ease
+          &:hover
+            background-color: lighten($active-color, 10%)

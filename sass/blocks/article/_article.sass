@@ -1,0 +1,329 @@
+.article
+  &__container
+    padding-top: 62px
+    padding-bottom: 67px
+    position: relative
+  &-author
+    position: absolute
+    top: -100px
+    right: 98px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 263px
+    min-height: 296px
+    border-radius: 10px
+    overflow: hidden
+    background-color: $light-text-color
+    border: 1px solid #D9DADB
+    z-index: 9
+    &__content
+      padding: 35px 25px 0 25px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__img
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &__name
+      margin: 15px 0 0 0
+      +Roboto-Slab(20px)
+      color: $darken-text-color
+    &__proffesion
+      margin: 9px 0 0 0
+      +Lato(14px)
+      color: $dark-text-color
+    &__counter
+      margin: 18px 0 22px 0
+      +Lato(14px)
+      font-weight: 600
+      color: $darken-text-color
+    &__link
+      padding-top: 17px
+      padding-bottom: 16px
+      width: 100%
+      text-align: center
+      +Lato(14px)
+      font-weight: 600
+      color: $darken-text-color
+      text-decoration: none
+      &::before
+        content: ''
+        position: absolute
+        bottom: 49px
+        left: 0
+        right: 0
+        height: 1px
+        background-color: #D9DADB
+        z-index: 8
+  &-text
+    margin-left: 91px
+    max-width: 623px
+    &__item
+      margin: 0 0 30px 6px
+      +Lato(18px)
+      line-height: 30px
+      color: $dark-text-color
+      &-strong
+        margin-top: 79px
+        margin-bottom: 46px
+        +Roboto-Slab(25px)
+        color: $darken-text-color
+        position: relative
+        z-index: 2
+        &::before
+          content: ''
+          position: absolute
+          top: -21px
+          left: -20px
+          width: 70px
+          height: 70px
+          background-image: url('../img/quote.svg')
+          background-repeat: no-repeat
+          z-index: -1
+      &-first
+        margin: 0 0 0 6px
+    &__strong
+      margin-top: 13px
+      margin-right: 10px
+      +Lato-Heavy(100px)
+      line-height: 75px
+      color: $active-color
+      text-transform: uppercase
+      float: left
+    &__title
+      margin: 45px 0 32px 6px
+      +Roboto-Slab(25px)
+      color: $darken-text-color
+  &-slider
+    padding-top: 28px
+    margin-bottom: 47px
+    border-radius: 10px
+    overflow: hidden
+    min-height: 625px
+    &__text
+      margin-top: -4px
+      padding: 17px 61px 11px 33px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      border-radius: 0 0 10px 10px
+      background-color: $light-text-color
+      border: 1px solid #D9DADB
+      border-top: none
+      position: relative
+      &-item
+        padding-right: 25px
+        margin: 0
+        +Lato(14px)
+        color: $dark-text-color
+        line-height: 20px
+    &__user
+      margin-left: 31px
+      display: flex
+      position: relative
+      min-width: 171px
+      &::before
+        content: ''
+        position: absolute
+        top: -13px
+        bottom: -11px
+        left: -31px
+        width: 1px
+        background-color: #D9DADB
+      &-text
+        margin-left: 10px
+        display: flex
+        flex-direction: column
+        position: relative
+      &-img
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        object-fit: cover
+      &-name
+        margin-top: 6px
+        +Lato(14px)
+        color: $dark-text-color
+      &-profession
+        margin-top: 5px
+        +Lato(12px)
+        color: #939699
+  &__slider
+    &-container
+      border-radius: 10px 10px 0 0
+      overflow: hidden
+      height: 555px
+    &-wrapper
+      position: relative
+      width: 100%
+      height: 100%
+    &-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-button
+      width: 60px
+      height: 60px
+      position: absolute
+      z-index: 99
+      outline: none
+      &--prev
+        top: 50%
+        transform: translateY(-50%)
+        left: 35px
+        background: url('../img/article/article/arrow-left.svg')
+        background-repeat: no-repeat
+        background-size: 60px
+      &--next
+        top: 50%
+        transform: translateY(-50%)
+        right: 35px
+        background: url('../img/article/article/arrow-right.svg')
+        background-repeat: no-repeat
+        background-size: 60px
+  &-material
+    padding: 25px 15px
+    position: absolute
+    top: 1726px
+    right: 82px
+    width: 293px
+    border-radius: 10px
+    background-color: $light-text-color
+    &__theme
+      +Roboto-Slab(20px)
+      color: $darken-text-color
+    &__img
+      margin-top: 21px
+      width: 263px
+      border-radius: 10px
+    &__title
+      margin: 11px 0 0 0
+      +Roboto-Slab(16px)
+      color: $darken-text-color
+      line-height: 25px
+    &__description
+      margin: 6px 0 0 0
+      +Lato(14px)
+      color: $dark-text-color
+      line-height: 20px
+    &__social
+      margin-top: 18px
+      display: flex
+      &-eye
+        position: relative
+        top: -1px
+        margin-right: 11px
+    &__comments
+      &-counter
+        color: #939699
+  &__aside
+    &-link
+      text-decoration: none
+  &-tags
+    margin-top: 50px
+    margin-left: 93px
+    margin-bottom: 64px
+    &__item
+      margin: 0 3px
+      padding: 6px 13px 5px 14px
+      +Lato(14px)
+      font-weight: 900
+      color: $darken-text-color
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      cursor: pointer
+  &-repost
+    padding-top: 34px
+    padding-bottom: 34px
+    margin-left: 99px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 390px
+      height: 1px
+      background-color: #D9DADB
+    &__title
+      margin: 0
+      +Roboto-Slab(25px)
+      color: $darken-text-color
+    &__button
+      margin-top: 35px
+      &-item
+        margin-right: 10px
+        padding: 11px 44px 12px 48px
+        position: relative
+        +Lato(14px)
+        font-weight: 900
+        color: $light-text-color
+        text-decoration: none
+        background-color: $active-color
+        border-radius: 20px
+        &:nth-child(1)
+          &::before
+            content: ''
+            position: absolute
+            top: 11px
+            left: 21px
+            width: 17px
+            height: 16px
+            background-image: url('../img/heart-white.svg')
+            background-repeat: no-repeat
+            background-size: 17px
+          &::after
+            content: '42'
+            position: absolute
+            top: 12px
+            right: 21px
+            +Lato(14px)
+            color: #FFC4C9
+        &:nth-child(2)
+          &::before
+            content: ''
+            position: absolute
+            top: 11px
+            left: 25px
+            width: 10px
+            height: 18px
+            background-image: url('../img/facebook-white.svg')
+            background-repeat: no-repeat
+            background-size: 10px
+          &::after
+            content: '80'
+            position: absolute
+            top: 12px
+            right: 21px
+            +Lato(14px)
+            color: #BBC6FF
+        &:nth-child(3)
+          &::before
+            content: ''
+            position: absolute
+            top: 12px
+            left: 22px
+            width: 18px
+            height: 16px
+            background-image: url('../img/twitter-white.svg')
+            background-repeat: no-repeat
+            background-size: 18px
+          &::after
+            content: '33'
+            position: absolute
+            top: 12px
+            right: 21px
+            +Lato(14px)
+            color: #C5E4FC
+
+.eye
+  &__img
+    width: 15px
+    height: 10px
+  &__counter
+    +Lato(12px)
+    color: #939699
