@@ -3624,7 +3624,7 @@ img {
     width: 158.33px;
   }
   .footer-lists__ul:nth-child(6) {
-    width: auto;
+    width: 158px;
   }
 }
 
@@ -3653,6 +3653,9 @@ img {
   }
   .footer-lists__ul:nth-child(6) {
     width: 240px;
+  }
+  .footer-lists__ul::before {
+    top: -26px;
   }
   .footer-social {
     padding-bottom: 31px;
