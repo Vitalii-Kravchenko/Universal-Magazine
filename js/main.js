@@ -3,7 +3,7 @@ $(document).ready(function () {
   // Header nav link
   function scrollTo(classOfName) {
     $('html, body').animate({
-      scrollTop: $("." + classOfName).offset().top - 40
+      scrollTop: $("." + classOfName).offset().top - 90
     }, 1500);
   }
 
