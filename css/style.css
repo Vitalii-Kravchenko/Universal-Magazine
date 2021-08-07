@@ -934,7 +934,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateX(150vh);
+  transform: translateX(100vw);
   visibility: hidden;
   background-color: #282F36;
   z-index: 169;
@@ -947,7 +947,7 @@ img {
 }
 
 .burger-modal--hidden {
-  transform: translateX(150vh);
+  transform: translateX(100vw);
   visibility: hidden;
   transition: visibility 0.5s ease, transform 0.5s ease;
 }
@@ -3367,7 +3367,7 @@ img {
     line-height: 16px;
   }
   .news-card__img {
-    height: 200px;
+    min-height: 200px;
   }
   .articles-popular__grid {
     grid-template-columns: 1fr;
