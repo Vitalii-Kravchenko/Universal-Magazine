@@ -255,9 +255,19 @@ $(document).ready(function () {
   // Arrow Up Scroll
   $(document).on('scroll', function () {
     if ($('html, body').scrollTop() > 1600) {
-      $('.arrow-up').css('display', 'block');
+      if ($('.arrow-up').css('display') == 'none') {
+        $('.arrow-up').css('opacity', '1');
+        $('.arrow-up').fadeIn(1000);
+      } else {
+
+      }
     } else {
-      $('.arrow-up').css('display', 'none');
+      if ($('.arrow-up').css('display') != 'none') {
+        $('.arrow-up').fadeOut(1000);
+      } else {
+
+      }
+
     }
   });
 
