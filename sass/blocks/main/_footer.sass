@@ -41,22 +41,6 @@
       justify-content: space-between
       width: 100%
       height: 5px
-      &-item
-        height: 5px
-        width: inherit
-        &:nth-child(1)
-          background-color: #FF4F52
-        &:nth-child(2)
-          background-color: #AC8EE3
-        &:nth-child(3)
-          background-color: #4592FF
-        &:nth-child(4)
-          background-color: #FFA34D
-        &:nth-child(5)
-          background-color: #3DC47E
-        &:nth-child(6)
-          max-width: 165px
-          background-color: #6E99AE
   &-lists
     padding-bottom: 46px
     display: flex
@@ -65,8 +49,33 @@
       padding: 0 10px 0 0
       list-style: none
       width: 195px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: -37px
+        left: 0
+        right: 0
+        height: 5px
+      &:nth-child(1)
+        &::before
+          background-color: #FF4F52
+      &:nth-child(2)
+        &::before
+          background-color: #AC8EE3
+      &:nth-child(3)
+        &::before
+          background-color: #4592FF
+      &:nth-child(4)
+        &::before
+          background-color: #FFA34D
+      &:nth-child(5)
+        &::before
+          background-color: #3DC47E
       &:nth-child(6)
         width: 165px
+        &::before
+          background-color: #6E99AE
       &-title
         margin: 0 0 30px 0
         +Lato(14px)
