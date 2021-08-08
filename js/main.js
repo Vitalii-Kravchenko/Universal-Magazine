@@ -103,6 +103,16 @@ $(document).ready(function () {
     }
   });
 
+  $(".comments-form").validate({
+    errorClass: "comments-form__validate-error",
+    messages: {
+      comment: {
+        required: "Напишите нам сообщение..",
+        minlength: "Минимальная длина символов - 100",
+      },
+    },
+  });
+
   // Fix many message *fast press button
 
 
@@ -123,6 +133,16 @@ $(document).ready(function () {
 
     setTimeout(function () {
       $('.footer-newsletter__button').removeAttr("disabled");
+    }, 5000);
+  });
+
+  $('.comments-form__button').on('click', function () {
+    setTimeout(function () {
+      $('.comments-form__button').attr("disabled", "disabled");
+    }, 50);
+
+    setTimeout(function () {
+      $('.comments-form__button').removeAttr("disabled");
     }, 5000);
   });
 

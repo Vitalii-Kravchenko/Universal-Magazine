@@ -2340,6 +2340,7 @@ body {
 .comments-form {
   display: inline-block;
   position: relative;
+  z-index: 3;
 }
 
 .comments-form__area {
@@ -2387,6 +2388,19 @@ body {
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: 15px;
+}
+
+#comment-error {
+  position: absolute;
+  padding: 10px 10px 5px 10px;
+  right: 0;
+  bottom: 29px;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #4592FF;
+  border-radius: 5px;
+  z-index: -1;
 }
 
 .footer__container {

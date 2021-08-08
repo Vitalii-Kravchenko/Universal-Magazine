@@ -162,6 +162,7 @@
   &-form
     display: inline-block
     position: relative
+    z-index: 3
     &__area
       padding: 10px
       width: 584px
@@ -200,3 +201,14 @@
         background-image: url('../img/arrow-right.svg')
         background-repeat: no-repeat
         background-size: 15px
+
+#comment-error
+  position: absolute
+  padding: 10px 10px 5px 10px
+  right: 0
+  bottom: 29px
+  +Lato(14px)
+  color: $light-text-color
+  background-color: $active-color
+  border-radius: 5px
+  z-index: -1
