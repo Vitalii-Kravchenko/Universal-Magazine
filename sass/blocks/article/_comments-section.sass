@@ -170,6 +170,14 @@
     display: inline-block
     position: relative
     z-index: 3
+    &__counter
+      position: absolute
+      right: 10px
+      bottom: 63px
+      +Lato(12px)
+      color: $darken-text-color
+      opacity: 0.8
+      display: none
     &__area
       padding: 10px
       width: 584px
@@ -211,6 +219,7 @@
 
 #comment-error
   position: absolute
+  display: block
   padding: 10px 10px 5px 10px
   right: 0
   bottom: 29px

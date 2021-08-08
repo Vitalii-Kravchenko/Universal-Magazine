@@ -290,6 +290,8 @@
     z-index: 7
 
   .article
+    &__container
+      padding-bottom: 0
     &-text
       &__item
         font-size: 14px
@@ -314,7 +316,7 @@
 
   .articles-popular
     &__container
-      padding: 60px 0 30px 0
+      padding: 60px 0 0 0
     &__cards
       justify-content: center
       &-item
@@ -323,6 +325,9 @@
         max-width: 255px
 
   .comments
+    &-section
+      &__container
+        padding-top: 45px
     &-top
       &__title
         font-size: 25px

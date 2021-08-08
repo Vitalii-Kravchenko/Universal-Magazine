@@ -368,4 +368,36 @@ $(document).ready(function () {
 
     }
   });
+
+  // Counter symbol
+  $('.comments-form__area').on('keyup', function () {
+
+    if ($('#comment-error').css('display') == 'block') {
+      $('.comments-form__counter').css('display', 'block');
+
+      var length = 100 - this.value.length;
+
+      if (length >= 0) {
+        $('.comments-form__counter').text(length);
+      } else {
+
+      }
+
+      if (length <= 0) {
+        $('.comments-form__counter').css('display', 'none');
+      } else {
+
+      }
+
+      if (length < 99) {
+        $('#comment-error').css('opacity', '0');
+      } else {
+        $('#comment-error').css('opacity', '1');
+      }
+
+    } else {
+
+    }
+
+  });
 });

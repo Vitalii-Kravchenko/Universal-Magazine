@@ -2368,6 +2368,17 @@ body {
   z-index: 3;
 }
 
+.comments-form__counter {
+  position: absolute;
+  right: 10px;
+  bottom: 63px;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 12px;
+  color: #262D33;
+  opacity: 0.8;
+  display: none;
+}
+
 .comments-form__area {
   padding: 10px;
   width: 584px;
@@ -2417,6 +2428,7 @@ body {
 
 #comment-error {
   position: absolute;
+  display: block;
   padding: 10px 10px 5px 10px;
   right: 0;
   bottom: 29px;
@@ -4108,6 +4120,9 @@ body {
     left: auto;
     z-index: 7;
   }
+  .article__container {
+    padding-bottom: 0;
+  }
   .article-text__item {
     font-size: 14px;
     line-height: 25px;
@@ -4133,7 +4148,7 @@ body {
     margin-bottom: 20px;
   }
   .articles-popular__container {
-    padding: 60px 0 30px 0;
+    padding: 60px 0 0 0;
   }
   .articles-popular__cards {
     justify-content: center;
@@ -4142,6 +4157,9 @@ body {
     margin-right: 0;
     margin-bottom: 50px;
     max-width: 255px;
+  }
+  .comments-section__container {
+    padding-top: 45px;
   }
   .comments-top__title {
     font-size: 25px;
