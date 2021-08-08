@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/article.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Universal Magazine</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="nav navbar__nav">
+        <div class="container nav__container">
+          <a class="navbar__logo" href="article.html">
+            <img
+              class="navbar__logo-img"
+              src="img/article/header/header-logo.png"
+              alt="Logo"
+            />
+          </a>
+          <ul class="nav-list navbar-list">
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >Статьи</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >Новости</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="articles-popular"
+                >Горячее</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >HTML</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >CSS</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >JavaScript</a
+              >
+            </li>
+            <li class="nav-list__item navbar-list__item">
+              <a
+                class="nav-list__link navbar-list__link"
+                href="#"
+                data-scroll="footer"
+                >Web Design</a
+              >
+            </li>
+          </ul>
+          <button class="navbar__button" data-open="modal">
+            Оставить заявку
+          </button>
+          <div class="navbar-burger" data-burger="open">
+            <span class="navbar-burger__item"></span>
+            <span class="navbar-burger__item"></span>
+            <span class="navbar-burger__item"></span>
+          </div>
+        </div>
+      </nav>
+      <div class="burger-modal">
+        <div class="container">
+          <div class="burger-modal__wrapper">
+            <ul class="nav-list navbar-list navbar-list--visible">
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >Статьи</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >Новости</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="articles-popular"
+                  >Горячее</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >HTML</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >CSS</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >JavaScript</a
+                >
+              </li>
+              <li class="nav-list__item navbar-list__item">
+                <a
+                  class="nav-list__link navbar-list__link"
+                  href="#"
+                  data-scroll="footer"
+                  >Web Design</a
+                >
+              </li>
+            </ul>
+            <button
+              class="navbar__button navbar__button--visible"
+              data-open="modal"
+            >
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-hero">
+        <img
+          class="navbar-hero__background-img"
+          src="img/article/header/background-2.jpg"
+          alt="Background Image"
+          loading="lazy"
+        />
+        <div class="container navbar__container">
+          <img
+            class="favorite"
+            src="img/favorite.svg"
+            alt="Icon: Favorite"
+            data-favorite="normal"
+          />
+          <div class="navbar-hero__nav">
+            <img class="navbar-hero__nav-img" src="img/home.svg" alt="Home" />
+            <a class="navbar-hero__nav-link" href="index.html">На главную</a>
+            <img
+              class="navbar-hero__nav-img"
+              src="img/arrow-left.svg"
+              alt="Arrow Left"
+            />
+            <a class="navbar-hero__nav-link" href="article-2.html">Назад</a>
+            <a class="navbar-hero__nav-link" href="article-3.html">Вперед</a>
+            <img
+              class="navbar-hero__nav-img"
+              src="img/arrow-right.svg"
+              alt="Arrow Right"
+            />
+          </div>
+          <div class="navbar-hero__text">
+            <span class="navbar-hero__text-theme">Новости</span>
+            <h1 class="navbar-hero__text-title">
+              Новый налоговый режим для фрилансеров — налог на проф. доход
+            </h1>
+            <p class="navbar-hero__text-description">
+              Руководитель налоговой заявил, что этот режим “поможет выйти из
+              тени” тем, кто работает неофициально. Разобрались, как работает
+              режим и кому он подходит, а кому нет.
+            </p>
+            <div class="navbar-hero__social">
+              <span class="date navbar-hero__social-date">
+                <img class="date__img" src="img/clock.svg" alt="Comment" />
+                <span class="date__counter">6 августа, 10:30</span>
+              </span>
+              <div class="like navbar-hero__social-like">
+                <img class="like__img" src="img/heart.svg" alt="heart" />
+                <span class="like__counter">830</span>
+              </div>
+              <div class="comments navbar-hero__social-comments">
+                <img
+                  class="comments__img"
+                  src="img/comment.svg"
+                  alt="Comment"
+                />
+                <span class="comments__counter">19</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.article-hero -->
+      <!-- /.container -->
+    </header>
+    <!-- /.navbar -->
+
+    <section class="article">
+      <div class="container article__container">
+        <div class="article-author">
+          <div class="article-author__content">
+            <img
+              class="article-author__img"
+              src="img/article/article/author.jpg"
+              alt="User Image"
+            />
+            <h5 class="article-author__name">Мира Стахова</h5>
+            <span class="article-author__proffesion">Фрилансер</span>
+            <span class="article-author__counter">82 статьи</span>
+          </div>
+          <a class="article-author__link" href="#">Страница автора</a>
+        </div>
+        <div class="article-text">
+          <strong class="article-text__strong">м</strong>
+          <p class="article-text__item article-text__item-first">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития.
+          </p>
+          <p class="article-text__item">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития. Значимость этих проблем настолько очевидна, что постоянное
+            информационно-пропагандистское обеспечение нашей деятельности влечет
+            за собой процесс внедрения и модернизации дальнейших направлений
+            развития.
+          </p>
+          <h4 class="article-text__title">Введение НПД в РФ</h4>
+          <p class="article-text__item">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития. Значимость этих проблем настолько очевидна, что постоянное
+            информационно-пропагандистское обеспечение нашей деятельности влечет
+            за собой процесс внедрения и модернизации
+          </p>
+          <p class="article-text__item">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития. Значимость этих проблем настолько очевидна,
+          </p>
+          <p class="article-text__item">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития. Значимость этих проблем настолько очевидна, что постоянное
+            информационно-пропагандистское обеспечение нашей деятельности влечет
+            за собой процесс внедрения и модернизации
+          </p>
+        </div>
+        <div class="article-slider">
+          <div class="swiper-container article__slider-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper article__slider-wrapper">
+              <!-- Slides -->
+              <img
+                class="swiper-slide article__slider-img"
+                src="img/article/article/slide-1.jpg"
+                alt="Slide 1"
+              />
+              <img
+                class="swiper-slide article__slider-img"
+                src="img/article/article/slide-2.jpg"
+                alt="Slide 2"
+              />
+              <img
+                class="swiper-slide article__slider-img"
+                src="img/article/article/slide-3.jpg"
+                alt="Slide 3"
+              />
+              <img
+                class="swiper-slide article__slider-img"
+                src="img/article/article/slide-4.jpg"
+                alt="Slide 4"
+              />
+              <img
+                class="swiper-slide article__slider-img"
+                src="img/article/article/slide-5.jpg"
+                alt="Slide 5"
+              />
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div
+              class="article__slider-button article__slider-button--next"
+            ></div>
+            <div
+              class="article__slider-button article__slider-button--prev"
+            ></div>
+          </div>
+          <div class="article-slider__text">
+            <p class="article-slider__text-item">
+              Geostatistics deal with quantitative data analysis, specifically
+              the application of statistical methodology
+            </p>
+            <div class="article-slider__user">
+              <img
+                class="article-slider__user-img"
+                src="img/article/article/user.jpg"
+                alt="User Photo"
+                loading="lazy"
+              />
+              <div class="article-slider__user-text">
+                <span class="article-slider__user-name">Андрей Вашигаев</span>
+                <span class="article-slider__user-profession">Фотограф</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article-text">
+          <p class="article-text__item">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития. Значимость этих проблем настолько очевидна, что постоянное
+            информационно-пропагандистское обеспечение нашей деятельности влечет
+            за собой процесс внедрения и модернизации дальнейших направлений
+            развития.
+          </p>
+          <p class="article-text__item">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития. Значимость этих проблем настолько очевидна, что постоянное
+            информационно-пропагандистское обеспечение нашей деятельности влечет
+            за собой процесс внедрения и модернизации
+          </p>
+          <a class="article__aside-link" href="#">
+            <aside class="article-material">
+              <span class="article-material__theme">Материал по теме</span>
+              <img
+                class="article-material__img"
+                src="img/article/article/giraffe.jpg"
+                alt="Background Image"
+              />
+              <h4 class="article-material__title">
+                20+ инструментов для&nbsp;js&#8209;разработчика
+              </h4>
+              <p class="article-material__description">
+                Узнайте, какими инструментами вы еще не пользовались, а могли
+                бы. Эти инструменты помогут вам ускорить свою работу или
+                повысить ее качество. Все инструменты собраны в виде...
+              </p>
+              <div class="article-material__social">
+                <div class="eye article-material__social-eye">
+                  <img class="eye__img" src="img/eye.svg" alt="heart" />
+                  <span class="eye__counter">1,623</span>
+                </div>
+                <div class="comments article-material__social-comments">
+                  <img
+                    class="comments__img"
+                    src="img/comment.svg"
+                    alt="Comment"
+                  />
+                  <span
+                    class="comments__counter article-material__comments-counter"
+                    >102</span
+                  >
+                </div>
+              </div>
+            </aside>
+          </a>
+          <p class="article-text__item article-text__item--margin">
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров играет важную роль в формировании дальнейших направлений
+            развития. Значимость этих проблем настолько очевидна, что постоянное
+            информационно-пропагандистское обеспечение нашей деятельности влечет
+            за собой процесс внедрения и модернизации дальнейших направлений
+            развития. Таким образом консультация с широким активом способствует
+            подготовки и реализации направлений
+          </p>
+          <p class="article-text__item article-text__item-strong">
+            Таким образом консультация с широким активом способствует подготовки
+            и реализации направлений прогрессивного развития. Не следует, однако
+            забывать, что новая модель организационной деятельности в
+            значительной степени обуславливает.
+          </p>
+          <p class="article-text__item">
+            Таким образом консультация с широким активом способствует подготовки
+            и реализации направлений прогрессивного развития. Не следует, однако
+            забывать, что новая модель организационной деятельности в
+            значительной степени обуславливает создание модели развития. Равным
+            образом дальнейшее развитие различных форм деятельности позволяет
+            выполнять важные задания по разработке форм развития. Разнообразный
+            и богатый опыт постоянный количественный
+          </p>
+          <p class="article-text__item">
+            Задача организации, в особенности же консультация с широким активом
+            требуют от нас анализа новых предложений. Повседневная практика
+            показывает, что постоянный количественный рост и сфера нашей
+          </p>
+        </div>
+        <div class="article-tags">
+          <span class="article-tags__item">Travel</span>
+          <span class="article-tags__item">Destinations</span>
+          <span class="article-tags__item">Nature</span>
+          <span class="article-tags__item">World</span>
+          <span class="article-tags__item">Alaska</span>
+        </div>
+        <div class="article-repost">
+          <h3 class="article-repost__title">Поддержите репостом</h3>
+          <div class="article-repost__button">
+            <a class="article-repost__button-item" href="#">Like it</a>
+            <a class="article-repost__button-item" href="#">Share</a>
+            <a class="article-repost__button-item" href="#">Tweet</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.container article__container -->
+    </section>
+    <!-- /.article -->
+
+    <section class="articles-popular">
+      <div class="container articles-popular__container">
+        <div class="articles-popular__cards">
+          <a class="articles-popular__cards-link" href="#">
+            <div class="articles-popular__cards-item">
+              <img
+                class="articles-popular__cards-img"
+                src="img/article/articles-popular/background-1.jpg"
+                alt="Background Image"
+              />
+              <h4 class="articles-popular__cards-title">
+                Техника работы по помидоркам — это как?
+              </h4>
+              <div class="articles-popular__social">
+                <div class="eye articles-popular__social-eye">
+                  <img class="eye__img" src="img/eye.svg" alt="heart" />
+                  <span class="eye__counter">1,904</span>
+                </div>
+                <div class="comments articles-popular__social-comments">
+                  <img
+                    class="comments__img"
+                    src="img/comment.svg"
+                    alt="Comment"
+                  />
+                  <span
+                    class="comments__counter articles-popular__comments-counter"
+                    >82</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="articles-popular__cards-link" href="#">
+            <div class="articles-popular__cards-item">
+              <img
+                class="articles-popular__cards-img"
+                src="img/article/articles-popular/background-2.jpg"
+                alt="Background Image"
+              />
+              <h4 class="articles-popular__cards-title">
+                Вопросы на собеседовании для джуна
+              </h4>
+              <div class="articles-popular__social">
+                <div class="eye articles-popular__social-eye">
+                  <img class="eye__img" src="img/eye.svg" alt="heart" />
+                  <span class="eye__counter">2,873</span>
+                </div>
+                <div class="comments articles-popular__social-comments">
+                  <img
+                    class="comments__img"
+                    src="img/comment.svg"
+                    alt="Comment"
+                  />
+                  <span
+                    class="comments__counter articles-popular__comments-counter"
+                    >982</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="articles-popular__cards-link" href="#">
+            <div class="articles-popular__cards-item">
+              <img
+                class="articles-popular__cards-img"
+                src="img/article/articles-popular/background-3.jpg"
+                alt="Background Image"
+              />
+              <h4 class="articles-popular__cards-title">
+                Список стран, куда можно улететь
+              </h4>
+              <div class="articles-popular__social">
+                <div class="eye articles-popular__social-eye">
+                  <img class="eye__img" src="img/eye.svg" alt="heart" />
+                  <span class="eye__counter">821</span>
+                </div>
+                <div class="comments articles-popular__social-comments">
+                  <img
+                    class="comments__img"
+                    src="img/comment.svg"
+                    alt="Comment"
+                  />
+                  <span
+                    class="comments__counter articles-popular__comments-counter"
+                    >30</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="articles-popular__cards-link" href="#">
+            <div class="articles-popular__cards-item">
+              <img
+                class="articles-popular__cards-img"
+                src="img/article/articles-popular/background-4.jpg"
+                alt="Background Image"
+              />
+              <h4 class="articles-popular__cards-title">
+                В вашем портфолио могут быть фейковые работы
+              </h4>
+              <div class="articles-popular__social">
+                <div class="eye articles-popular__social-eye">
+                  <img class="eye__img" src="img/eye.svg" alt="heart" />
+                  <span class="eye__counter">5,030</span>
+                </div>
+                <div class="comments articles-popular__social-comments">
+                  <img
+                    class="comments__img"
+                    src="img/comment.svg"
+                    alt="Comment"
+                  />
+                  <span
+                    class="comments__counter articles-popular__comments-counter"
+                    >495</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /.container articles-popular__container -->
+    </section>
+    <!-- /.articles-popular -->
+
+    <section class="comments-section">
+      <div class="container comments-section__container">
+        <div class="comments-top">
+          <div class="comments-top__text">
+            <h2 class="comments-top__title">Комментарии</h2>
+            <span class="comments-top__counter">19</span>
+          </div>
+          <a class="comments-top__add-comment" href="#">Добавить комментарий</a>
+        </div>
+        <div class="comments-cards">
+          <div class="comments-cards__item">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-1.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Михаил Степашин</span>
+                <span class="comments-cards__name-date">17 июля, 18:38</span>
+              </div>
+              <p class="comments-cards__comment">
+                Хочу заметить, что автор этой статьи не написал, что не все
+                могут получить статус самозанятого. Этот режим еще не ввели во
+                всех регионах. Но если в вашем регионе есть, то поздравляю.
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span class="comments-cards__likes-counter">+10</span>
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-cards__item comments-cards__item-response">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-2.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Мира Стахова</span>
+                <span class="comments-cards__name-date">17 июля, 18:41</span>
+              </div>
+              <p class="comments-cards__comment">
+                Да, спасибо за замечание. Добавлю список регионов, где этот
+                режим уже действует и буду периодически обновлять его. Потому
+                что обещали ввести этот режим везде.
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span
+                    class="
+                      comments-cards__likes-counter
+                      comments-cards__likes-counter--color_gray
+                    "
+                    >0</span
+                  >
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-cards__item">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-3.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Анжела Иванова</span>
+                <span class="comments-cards__name-date">17 июля, 18:53</span>
+              </div>
+              <p
+                class="
+                  comments-cards__comment comments-cards__comment--margin_bottom
+                "
+              >
+                Если честно, кажется, что этот налоговый режим ввели, чтобы
+                собрать больше денег с народа. Я, конечно, понимаю, что бюджеты
+                надо пополнять, но не лучше ли обложить налогом богатых?
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span
+                    class="
+                      comments-cards__likes-counter
+                      comments-cards__likes-counter--color_red
+                    "
+                    >-3</span
+                  >
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-cards__item">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-4.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Крис Яков</span>
+                <span class="comments-cards__name-date">17 июля, 19:12</span>
+              </div>
+              <p class="comments-cards__comment">
+                Такой режим уже давно работает в продвинутых странах, почему его
+                ввели только сейчас, непонятно. Хотелось бы, чтобы это все
+                заработало в моем регионе, буду в числе первых!
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span
+                    class="
+                      comments-cards__likes-counter
+                      comments-cards__likes-counter--color_gray
+                    "
+                    >0</span
+                  >
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-cards__item comments-cards__item--display_none">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-5.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Виталий Кравченко</span>
+                <span class="comments-cards__name-date">18 июля, 07:51</span>
+              </div>
+              <p class="comments-cards__comment">
+                Небольшой привет кураторам, которые проверяют мою работу 👋
+                Хорошего вам дня 😉
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span
+                    class="
+                      comments-cards__likes-counter
+                      comments-cards__likes-counter
+                    "
+                    >+23</span
+                  >
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-cards__item comments-cards__item--display_none">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-6.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Илон Маск</span>
+                <span class="comments-cards__name-date">17 июля, 20:59</span>
+              </div>
+              <p class="comments-cards__comment">
+                Ну что, не зря я учил русский. Наверное для того, что бы читать
+                Ваши статьи. Очень интересно и познавательно.
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span class="comments-cards__likes-counter">+43</span>
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-cards__item comments-cards__item--display_none">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-7.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Артем Исламов</span>
+                <span class="comments-cards__name-date">18 июля, 14:27</span>
+              </div>
+              <p class="comments-cards__comment">
+                Ну что, тут я пожелаю всем студентам удачи. Я верю в то, что у
+                вас все получиться! И у каждого будет достойная работа, которую
+                не стыдно показать людям, и которую можно будет положить к себе
+                в портфолио.
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span class="comments-cards__likes-counter">+857</span>
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-cards__item comments-cards__item--display_none">
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-8.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Марк Цукерберг</span>
+                <span class="comments-cards__name-date">17 июля, 23:59</span>
+              </div>
+              <p class="comments-cards__comment">
+                Мдаа.. Как всегда, я про все узнаю последним. Хорошо, что Ваша
+                статья, попалась мне на глаза. Спасибо Вам!
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span class="comments-cards__likes-counter">+19</span>
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              comments-cards__item
+              comments-cards__item-response
+              comments-cards__item--display_none
+            "
+          >
+            <img
+              class="comments-cards__img"
+              src="img/article/comments/user-2.jpg"
+              alt="User Image"
+            />
+            <div class="comments-cards__text">
+              <div class="comments-cards__name">
+                <span class="comments-cards__name-item">Мира Стахова</span>
+                <span class="comments-cards__name-date">18 июля, 07:28</span>
+              </div>
+              <p class="comments-cards__comment">
+                Спасибо вам за хороший коментарий! Надеюсь здесь, Вы найдете еще
+                что-то полезное.
+              </p>
+              <div class="comments-cards__social">
+                <div class="comments-cards__write">
+                  <img
+                    class="comments-cards__write-img"
+                    src="img/comment.svg"
+                    alt="Icon: Comment"
+                  />
+                  <a class="comments-cards__write-item" href="#">Ответить</a>
+                </div>
+                <div class="comments-cards__likes">
+                  <img
+                    class="comments-cards__likes-like"
+                    src="img/like.svg"
+                    alt="Icon: Like"
+                  />
+                  <span class="comments-cards__likes-counter">+4</span>
+                  <img
+                    class="comments-cards__likes-dislike"
+                    src="img/dislike.svg"
+                    alt="Icon: DisLike"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comments-loading">
+          <div class="comments-loading__wrapper">
+            <img
+              class="comments-loading__img"
+              src="img/loading.svg"
+              alt="Icon: Loading"
+            />
+            <span class="comments-loading__item">загрузить еще</span>
+          </div>
+        </div>
+        <div class="comments-bottom">
+          <h3 class="comments-bottom__title">Что вы думаете на этот счет?</h3>
+          <img
+            class="comments-bottom__img"
+            src="img/article/comments/user-comment.jpg"
+            alt="User Photo"
+          />
+          <form class="comments-form" action="send.php" method="POST">
+            <textarea
+              class="comments-form__area"
+              name="comment"
+              minlength="100"
+              required
+            ></textarea>
+            <span class="comments-form__counter">100</span>
+            <button class="button comments-form__button">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <!-- /.container comments__container -->
+    </section>
+    <!-- /.comments -->
+
+    <section class="footer">
+      <div class="container footer__container">
+        <div class="footer-newsletter">
+          <h2 class="footer-newsletter__title">Подпишитесь на нашу рассылку</h2>
+          <form class="footer-newsletter__form" action="send.php" method="POST">
+            <input
+              class="footer-newsletter__input"
+              type="email"
+              placeholder="Email"
+              name="newsletter"
+              required
+            />
+            <button class="button footer-newsletter__button">
+              Подписаться
+            </button>
+          </form>
+        </div>
+        <!-- /.footer-newsletter -->
+        <div class="footer-content">
+          <div class="footer-content__line">
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+            <span class="footer-content__line-item"></span>
+          </div>
+          <div class="footer-lists">
+            <ul class="footer-lists__ul">
+              <li class="footer-lists__ul-title">Новости</li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Обновления</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Экспресс</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Politics</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Solar Eclipse</a>
+              </li>
+            </ul>
+            <ul class="footer-lists__ul">
+              <li class="footer-lists__ul-title">Статьи</li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">HTML</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">CSS</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">JavaScript</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Web Design</a>
+              </li>
+            </ul>
+            <ul class="footer-lists__ul">
+              <li class="footer-lists__ul-title">Видеоуроки</li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Скринкасты</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Уроки</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Вебинары</a>
+              </li>
+            </ul>
+            <ul class="footer-lists__ul">
+              <li class="footer-lists__ul-title">Курсы</li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Платные интенсивы</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Бесплатные стримы</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Мастер-классы</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Менторство</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Буткемпы</a>
+              </li>
+            </ul>
+            <ul class="footer-lists__ul">
+              <li class="footer-lists__ul-title">Информация</li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Политика данных</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Оферта сайта</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Реквизиты</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="footer-lists__ul">
+              <li class="footer-lists__ul-title">Категории</li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#"> Популярное</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#"> Горячее</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Подборки</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Мнения</a>
+              </li>
+              <li class="footer-lists__ul-item">
+                <a class="footer-lists__link" href="#">Карьера</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <div class="footer-social__text">
+              <a class="footer-social__logo-link" href="index.html">
+                <img
+                  class="footer-social__logo"
+                  src="img/footer-logo.png"
+                  alt="Logo"
+                />
+              </a>
+              <ul class="footer-social__list">
+                <li class="footer-social__list-item">
+                  <a class="footer-social__list-link" href="#">Контакты </a>
+                </li>
+                <li class="footer-social__list-item">
+                  <a class="footer-social__list-link" href="#">Работа у нас </a>
+                </li>
+                <li class="footer-social__list-item">
+                  <a class="footer-social__list-link" href="#">Реклама </a>
+                </li>
+                <li class="footer-social__list-item">
+                  <a class="footer-social__list-link" href="#">Партнерство </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-social__icon">
+              <a
+                class="footer-social__icon-link"
+                href="https://www.facebook.com/profile.php?id=100069592294222"
+                rel="noopener nofollow"
+                target="_blank"
+              >
+                <img
+                  class="footer-social__icon-item"
+                  src="img/facebook.svg"
+                  alt="Icon: Facebook"
+                />
+              </a>
+              <a
+                class="footer-social__icon-link"
+                href="https://twitter.com/7AHmJJN40lvZVPT"
+                rel="noopener nofollow"
+                target="_blank"
+              >
+                <img
+                  class="footer-social__icon-item"
+                  src="img/twitter.svg"
+                  alt="Icon: Twitter"
+                />
+              </a>
+              <a
+                class="footer-social__icon-link"
+                href="https://www.youtube.com/channel/UCoVWVYwyd6td7KiBqY1Zr9g"
+                rel="noopener nofollow"
+                target="_blank"
+              >
+                <img
+                  class="footer-social__icon-item"
+                  src="img/youtube.svg"
+                  alt="Icon: YouTube"
+                />
+              </a>
+              <a
+                class="footer-social__icon-link"
+                href="https://www.instagram.com/_vitaliy_kravchenk0_/"
+                rel="noopener nofollow"
+                target="_blank"
+              >
+                <img
+                  class="footer-social__icon-item"
+                  src="img/instagram.svg"
+                  alt="Icon: Instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p class="footer-copyright__text">
+              Universal — это онлайн издание, в котором мы публикуем полезные
+              материалы о веб разработке: статьи, новости, видеоуроки, подборки,
+              ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+              указывайте ссылку.
+            </p>
+            <span class="footer-copyright__item"
+              >© 2020 Universal Magazine</span
+            >
+          </div>
+        </div>
+        <!-- /.footer-content -->
+      </div>
+      <!-- /.container footer-container -->
+    </section>
+    <!-- /.footer -->
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <div class="modal__close" data-close="modal"></div>
+        <h3 class="modal__title">Обратная связь</h3>
+        <form class="modal__form" action="send.php" method="POST">
+          <div class="modal-theme">
+            <h4 class="modal-theme__title">Тема</h4>
+            <select class="modal-theme__select" name="theme" required>
+              <option
+                class="modal-theme__item modal-theme__item-first"
+                value=""
+                disabled
+                selected
+              >
+                Выберите тему
+              </option>
+              <option class="modal-theme__item" value="Статьи">Статьи</option>
+              <option class="modal-theme__item" value="Новости">Новости</option>
+              <option class="modal-theme__item" value="Горячее">Горячее</option>
+              <option class="modal-theme__item" value="HTML">HTML</option>
+              <option class="modal-theme__item" value="CSS">CSS</option>
+              <option class="modal-theme__item" value="JavaScript">
+                JavaScript
+              </option>
+              <option class="modal-theme__item" value="Web Design">
+                Web Design
+              </option>
+            </select>
+            <img
+              class="modal-theme__arrow"
+              src="img/modal/arrow.png"
+              alt="Arrow"
+            />
+          </div>
+          <!-- /.modal-theme -->
+          <div class="modal-message">
+            <h4 class="modal-message__title">Сообщение</h4>
+            <textarea
+              class="modal-message__item"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <!-- /.modal-message -->
+          <div class="modal-email">
+            <h4 class="modal-email__title">Email</h4>
+            <input
+              class="modal-email__input"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <!-- /.modal-email -->
+          <div class="modal-checkbox">
+            <input
+              class="modal-checkbox__input modal-checkbox__input--hidden"
+              id="modal-checkbox__input"
+              type="checkbox"
+              name="checkbox"
+              required
+            />
+            <label
+              class="modal-checkbox__label"
+              id="modal-checkbox__label"
+              for="modal-checkbox__input"
+            ></label>
+            <span class="modal-checkbox__text"
+              >Согласен с обработкой данных</span
+            >
+          </div>
+          <!-- /.modal-checkbox -->
+          <button class="button modal__send">Отправить</button>
+        </form>
+        <!-- /.modal__form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="arrow-up">
+      <img class="arrow-up__item" src="img/arrow-up.svg" alt="Arrow Up" />
+    </div>
+    <!-- /.arrow-up -->
+
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/parallax.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
