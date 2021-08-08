@@ -3847,11 +3847,8 @@ body {
     margin-bottom: 30px;
     max-width: 237px;
   }
-  .comments-loading__img {
-    transform: translateX(-8px);
-  }
-  .comments-loading__item {
-    transform: translateX(8px);
+  .comments-loading__wrapper {
+    transform: translateX(0);
   }
 }
 
