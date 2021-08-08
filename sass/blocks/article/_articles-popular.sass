@@ -1,0 +1,34 @@
+.articles-popular
+  background-color: #F5F5F5
+  &__container
+    padding: 35px 0 63px 0
+    max-width: 1170px
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    &-link
+      text-decoration: none
+    &-item
+      margin-right: -1px
+      padding: 25px 15px
+      max-width: 293px
+      border-radius: 10px
+    &-img
+      width: 100%
+      height: 100%
+      border-radius: 10px
+      overflow: hidden
+      object-fit: cover
+    &-title
+      margin: 11px 0 0 0
+      +Roboto-Slab(16px)
+      color: $darken-text-color
+      line-height: 25px
+  &__social
+    margin-top: 14px
+    display: flex
+    &-eye
+      margin-right: 11px
+  &__comments
+    &-counter
+      color: #939699
