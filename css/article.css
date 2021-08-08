@@ -569,6 +569,15 @@ img {
   z-index: 168;
 }
 
+.thanks__container--margin {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.thanks--padding {
+  padding: 110px 0 !important;
+}
+
 .navbar {
   background-color: #262D33;
 }
@@ -4087,6 +4096,9 @@ body {
     bottom: 40px;
     left: 0;
   }
+  .navbar-hero__nav-img:nth-child(3) {
+    margin-left: 29px;
+  }
   .navbar-hero__nav-link:nth-child(2) {
     width: 78px;
   }
@@ -4120,6 +4132,9 @@ body {
   .article-repost__button-item {
     margin-bottom: 20px;
   }
+  .articles-popular__container {
+    padding: 60px 0 30px 0;
+  }
   .articles-popular__cards {
     justify-content: center;
   }
@@ -4144,6 +4159,7 @@ body {
     margin-top: 20px;
   }
   .comments-bottom__title {
+    margin: 0;
     font-size: 14px;
   }
   .comments-bottom__img {

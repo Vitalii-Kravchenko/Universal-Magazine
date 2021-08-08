@@ -570,6 +570,15 @@ img {
   z-index: 168;
 }
 
+.thanks__container--margin {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.thanks--padding {
+  padding: 110px 0 !important;
+}
+
 .navbar {
   background-color: #262D33;
 }
