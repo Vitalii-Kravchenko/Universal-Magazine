@@ -1891,6 +1891,7 @@ body {
 .article-material__img {
   margin-top: 21px;
   width: 263px;
+  height: 100%;
   border-radius: 10px;
 }
 
