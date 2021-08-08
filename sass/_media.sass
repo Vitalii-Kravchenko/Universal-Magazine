@@ -736,19 +736,20 @@
         background-color: $darken-text-color
         opacity: 0
         z-index: 200
-        transition: opacity 0.2s ease
+        transition: opacity 0.3s ease
       &:hover
         &::after
-          opacity: 0.2
+          opacity: 0.15
     &-check
       &__button
         &:hover
-          background-color: lighten(#3BBDC4, 15%)
+          background-color: lighten(#3BBDC4, 10%)
     &-tags
       &__buttons
         &-item
+          transition: background-color 0.3s ease
           &:hover
-            background-color: darken($light-text-color, 15%)
+            background-color: darken($light-text-color, 10%)
     &-social
       &__img
         &:hover
@@ -768,7 +769,7 @@
         width: auto
         background-color: $light-text-color
         opacity: 0
-        transition: opacity 0.2s ease
+        transition: opacity 0.3s ease
       &::after
         content: ''
         position: absolute
@@ -781,7 +782,7 @@
         width: auto
         background-color: $light-text-color
         opacity: 0
-        transition: opacity 0.2s ease
+        transition: opacity 0.3s ease
       &:hover
         &::after
           opacity: 0.3
@@ -789,13 +790,13 @@
           opacity: 0.3
 
   .button-active
-    transition: background-color 0.2s ease
+    transition: background-color 0.3s ease
     &:hover
       background-color: lighten($active-color, 15%)
 
   .news
     &-card
-      transition: background-color 0.2s ease
+      transition: background-color 0.3s ease
       &:hover
         background-color: darken($light-text-color, 10%)
     &-aside
@@ -809,7 +810,7 @@
           right: -25px
           opacity: 0
           background-color: darken($light-text-color, 10%)
-          transition: opacity 0.2s ease
+          transition: opacity 0.3s ease
           z-index: 1
         &:hover
           &::after
@@ -824,7 +825,7 @@
           right: -102px
           opacity: 0
           background-color: $darken-text-color
-          transition: opacity 0.2s ease
+          transition: opacity 0.3s ease
           border-radius: 0 0 10px 10px
           z-index: 1
         &:hover
@@ -835,34 +836,34 @@
     &-lists
       &__ul
         &-item
-          transition: color 0.2s ease
+          transition: color 0.3s ease
           &:hover
             color: $active-color
     &-social
       &__list
         &-item
-          transition: color 0.2s ease
+          transition: color 0.3s ease
           &:hover
             color: $active-color
       &__icon
         &-item
-          transition: opacity 0.2s ease
+          transition: opacity 0.3s ease
           &:hover
             opacity: 0.6
 
   .button-photo
-    transition: background-color 0.2s ease
+    transition: background-color 0.3s ease
     &:hover
       background-color: lighten($active-color, 15%)
 
   .articles-popular
     &__card
       &-two
-        transition: background-color 0.2s ease
+        transition: background-color 0.3s ease
         &:hover
           background-color: darken($light-text-color, 15%)
       &-three
-        transition: background-color 0.2s ease
+        transition: background-color 0.3s ease
         &:hover
           background-color: darken($light-text-color, 15%)
 
