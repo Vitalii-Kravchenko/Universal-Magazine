@@ -2108,6 +2108,287 @@ body {
   color: #939699;
 }
 
+.comments-section__container {
+  padding: 93px 0 30px 97px;
+}
+
+.comments-top {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+}
+
+.comments-top__text {
+  display: flex;
+  align-items: center;
+}
+
+.comments-top__title {
+  margin: 0 11px 0 0;
+  font-family: "Roboto Slab", 'Helvetica', sans-serif;
+  font-size: 40px;
+  color: #262D33;
+  float: left;
+}
+
+.comments-top__counter {
+  padding-top: 4px;
+  line-height: 40px;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 40px;
+  color: #939699;
+}
+
+.comments-top__add-comment {
+  margin-top: 2px;
+  padding: 12px 20px 11px 50px;
+  position: relative;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 12px;
+  color: #262D33;
+  text-decoration: none;
+  height: 40px;
+  border: 1px solid #D9DADB;
+  border-radius: 20px;
+  font-weight: 900;
+  background-color: #ffffff;
+}
+
+.comments-top__add-comment::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 21px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/pencil.svg");
+  background-size: 18px;
+}
+
+.comments-cards__item {
+  margin-bottom: 29px;
+  padding-top: 21px;
+  display: flex;
+  position: relative;
+  max-width: 750px;
+}
+
+.comments-cards__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #D9DADB;
+}
+
+.comments-cards__item-response {
+  padding-left: 90px;
+}
+
+.comments-cards__img {
+  margin-right: 15px;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comments-cards__name {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.comments-cards__name-item {
+  margin-right: 8px;
+  font-family: "Roboto Slab", 'Helvetica', sans-serif;
+  font-size: 16px;
+  color: #262D33;
+}
+
+.comments-cards__name-date {
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 12px;
+  color: #939699;
+}
+
+.comments-cards__comment {
+  margin: 15px 0 0 0;
+  max-width: 570px;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 18px;
+  color: #4B5157;
+  line-height: 30px;
+}
+
+.comments-cards__comment--margin_bottom {
+  margin-bottom: 44px;
+}
+
+.comments-cards__social {
+  margin-top: 14px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.comments-cards__write {
+  margin-right: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.comments-cards__write-img {
+  margin-right: 6px;
+  width: 14px;
+  height: 14px;
+}
+
+.comments-cards__write-item {
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 12px;
+  color: #262D33;
+  text-decoration: none;
+}
+
+.comments-cards__likes {
+  display: flex;
+  align-items: flex-end;
+}
+
+.comments-cards__likes-like {
+  transform: translateY(-1px);
+  margin-right: 10px;
+  width: 14px;
+  height: 13px;
+}
+
+.comments-cards__likes-counter {
+  margin-right: 10px;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  color: #3DC47E;
+}
+
+.comments-cards__likes-counter--color_gray {
+  color: #939699;
+}
+
+.comments-cards__likes-counter--color_red {
+  color: #FF4F52;
+}
+
+.comments-cards__likes-dislike {
+  transform: translateY(1px);
+  width: 14px;
+  height: 13px;
+}
+
+.comments-loading {
+  margin-top: 30px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
+  border: 1px solid #D9DADB;
+  border-radius: 25px;
+  background-color: #ffffff;
+}
+
+.comments-loading__img {
+  transform: translateX(11px);
+  width: 14px;
+  height: 14px;
+}
+
+.comments-loading__item {
+  transform: translateX(16px);
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #262D33;
+}
+
+.comments-bottom {
+  margin-top: 60px;
+  padding: 31px 30px 35px 30px;
+  max-width: 750px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.comments-bottom__title {
+  margin: 0 0 16px 95px;
+  font-family: "Roboto Slab", 'Helvetica', sans-serif;
+  font-size: 20px;
+  color: #262D33;
+}
+
+.comments-bottom__img {
+  margin-right: 21px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+}
+
+.comments-form {
+  display: inline-block;
+  position: relative;
+}
+
+.comments-form__area {
+  padding: 10px;
+  width: 584px;
+  height: 130px;
+  resize: none;
+  border: 1px solid #D9DADB;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Lato", 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #262D33;
+}
+
+.comments-form::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -7px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-top: 1px solid #D9DADB;
+  border-left: 1px solid #D9DADB;
+  transform: rotate(-45deg);
+}
+
+.comments-form__button {
+  margin-top: 11px;
+  margin-left: 2px;
+  padding: 13px 44px 11px 23px;
+  display: block;
+  position: relative;
+}
+
+.comments-form__button::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: 21px;
+  width: 15px;
+  height: 7px;
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
 .footer__container {
   padding-top: 63px;
   padding-bottom: 54px;
@@ -3134,7 +3415,7 @@ body {
 
 @media (min-width: 992px) {
   .button:hover {
-    background-color: #92bfff;
+    background-color: #78b0ff;
   }
   .navbar__button:hover {
     background-color: #4592FF;
@@ -3259,16 +3540,16 @@ body {
   .news-aside__button:hover::before {
     opacity: 0.10;
   }
-  .footer-lists__ul-item {
+  .footer-lists__link {
     transition: color 0.3s ease;
   }
-  .footer-lists__ul-item:hover {
+  .footer-lists__link:hover {
     color: #4592FF;
   }
-  .footer-social__list-item {
+  .footer-social__list-link {
     transition: color 0.3s ease;
   }
-  .footer-social__list-item:hover {
+  .footer-social__list-link:hover {
     color: #4592FF;
   }
   .footer-social__icon-item {
@@ -3751,6 +4032,25 @@ body {
   }
   .articles-popular__cards-item:hover {
     background-color: #e6e6e6;
+  }
+  .comments-top__add-comment {
+    transition: background-color 0.3s ease;
+  }
+  .comments-top__add-comment:hover {
+    background-color: #ebebeb;
+  }
+  .comments-cards__write-item {
+    transition: color 0.3s ease;
+  }
+  .comments-cards__write-item:hover {
+    color: #4592FF;
+  }
+  .comments-loading {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .comments-loading:hover {
+    background-color: #f0f0f0;
   }
 }
 /*# sourceMappingURL=article.css.map */

@@ -3450,7 +3450,7 @@ img {
 
 @media (min-width: 992px) {
   .button:hover {
-    background-color: #92bfff;
+    background-color: #78b0ff;
   }
   .navbar__button:hover {
     background-color: #4592FF;
@@ -3575,16 +3575,16 @@ img {
   .news-aside__button:hover::before {
     opacity: 0.10;
   }
-  .footer-lists__ul-item {
+  .footer-lists__link {
     transition: color 0.3s ease;
   }
-  .footer-lists__ul-item:hover {
+  .footer-lists__link:hover {
     color: #4592FF;
   }
-  .footer-social__list-item {
+  .footer-social__list-link {
     transition: color 0.3s ease;
   }
-  .footer-social__list-item:hover {
+  .footer-social__list-link:hover {
     color: #4592FF;
   }
   .footer-social__icon-item {

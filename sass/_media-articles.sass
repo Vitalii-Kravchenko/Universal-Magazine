@@ -271,3 +271,22 @@
         transition: background-color 0.3s ease
         &:hover
           background-color: darken($light-text-color, 10%)
+
+  .comments
+    &-top
+      &__add
+        &-comment
+          transition: background-color 0.3s ease
+          &:hover
+            background-color: darken($light-text-color, 8%)
+    &-cards
+      &__write
+        &-item
+          transition: color 0.3s ease
+          &:hover
+            color: $active-color
+    &-loading
+      transition: background-color 0.3s ease
+      cursor: pointer
+      &:hover
+        background-color: darken($light-text-color, 6%)

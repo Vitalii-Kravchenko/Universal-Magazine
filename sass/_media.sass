@@ -696,7 +696,7 @@
 @media ( min-width: 992px )
   .button
     &:hover
-      background-color: lighten($active-color, 15%)
+      background-color: lighten($active-color, 10%)
   // Main Page
 
   // Header
@@ -834,14 +834,13 @@
 
   .footer
     &-lists
-      &__ul
-        &-item
-          transition: color 0.3s ease
-          &:hover
-            color: $active-color
+      &__link
+        transition: color 0.3s ease
+        &:hover
+          color: $active-color
     &-social
       &__list
-        &-item
+        &-link
           transition: color 0.3s ease
           &:hover
             color: $active-color
