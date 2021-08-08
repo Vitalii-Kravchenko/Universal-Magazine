@@ -1850,6 +1850,7 @@ body {
   background: url("../img/article/article/arrow-left.svg");
   background-repeat: no-repeat;
   background-size: 60px;
+  cursor: pointer;
 }
 
 .article__slider-button--next {
@@ -1859,6 +1860,7 @@ body {
   background: url("../img/article/article/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: 60px;
+  cursor: pointer;
 }
 
 .article-material {
@@ -3818,10 +3820,11 @@ body {
   }
   .articles-popular__cards {
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
   }
   .articles-popular__cards-item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    max-width: 237px;
   }
   .comments-loading__img {
     transform: translateX(-8px);
