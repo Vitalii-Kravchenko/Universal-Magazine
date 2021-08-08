@@ -319,4 +319,53 @@ $(document).ready(function () {
     }, 1000);
   });
 
+  // Show cards
+  $('.comments-loading').on('click', function () {
+    var heightCards = $('.comments-cards').height();
+
+    var counterNotVisibleCard = 0;
+    var notVisibleCard = [];
+
+    var newHeightCards = heightCards;
+
+    $('.comments-cards__item').each(function (i, key) {
+      if ($(key).is(':hidden')) {
+        counterNotVisibleCard++;
+
+        notVisibleCard.push(key);
+      }
+    });
+
+    function showCard(counter) {
+      console.log(heightCards);
+      for (var i = 0; i < counter; i++) {
+        $(notVisibleCard[i]).css('display', 'flex');
+        newHeightCards += $(notVisibleCard[i]).outerHeight(true);
+        console.log(newHeightCards);
+      }
+
+      $('.comments-cards').height(heightCards);
+
+      $('.comments-cards').animate({
+        height: newHeightCards
+      }, 1000);
+
+      $('.comments-loading__img').addClass('comments-loading__img--rotate');
+
+      setTimeout(function () {
+        $('.comments-loading__img').removeClass('comments-loading__img--rotate');
+      }, 2000);
+    }
+
+
+    if (counterNotVisibleCard % 3 == 0 || counterNotVisibleCard >= 3) {
+      showCard(3);
+    } else if (counterNotVisibleCard % 2 == 0 || counterNotVisibleCard >= 2) {
+      showCard(2);
+    } else if (counterNotVisibleCard % 1 == 0 || counterNotVisibleCard >= 1) {
+      showCard(1);
+    } else {
+
+    }
+  });
 });

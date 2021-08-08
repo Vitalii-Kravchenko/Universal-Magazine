@@ -43,6 +43,7 @@
           background-image: url('../img/pencil.svg')
           background-size: 18px
   &-cards
+    overflow: hidden
     &__item
       margin-bottom: 29px
       padding-top: 21px
@@ -59,6 +60,8 @@
         background-color: #D9DADB
       &-response
         padding-left: 90px
+      &--display_none
+        display: none
     &__img
       margin-right: 15px
       width: 75px
@@ -124,7 +127,7 @@
         width: 14px
         height: 13px
   &-loading
-    margin-top: 30px
+    margin-top: 1px
     padding: 16px 0
     display: flex
     justify-content: center
@@ -133,12 +136,16 @@
     border: 1px solid #D9DADB
     border-radius: 25px
     background-color: $light-text-color
+    &__wrapper
+      display: flex
+      align-items: center
+      transform: translateX(14px)
+      height: 16px
     &__img
-      transform: translateX(11px)
       width: 14px
       height: 14px
     &__item
-      transform: translateX(16px)
+      margin-left: 6px
       +Lato(14px)
       font-weight: 600
       color: $darken-text-color
@@ -212,3 +219,13 @@
   background-color: $active-color
   border-radius: 5px
   z-index: -1
+
+.comments-loading__img--rotate
+  animation-name: rotate
+  animation-duration: 2s
+
+@keyframes rotate
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)

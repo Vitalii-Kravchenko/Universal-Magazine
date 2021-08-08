@@ -2166,6 +2166,10 @@ body {
   background-size: 18px;
 }
 
+.comments-cards {
+  overflow: hidden;
+}
+
 .comments-cards__item {
   margin-bottom: 29px;
   padding-top: 21px;
@@ -2186,6 +2190,10 @@ body {
 
 .comments-cards__item-response {
   padding-left: 90px;
+}
+
+.comments-cards__item--display_none {
+  display: none;
 }
 
 .comments-cards__img {
@@ -2288,7 +2296,7 @@ body {
 }
 
 .comments-loading {
-  margin-top: 30px;
+  margin-top: 1px;
   padding: 16px 0;
   display: flex;
   justify-content: center;
@@ -2299,14 +2307,20 @@ body {
   background-color: #ffffff;
 }
 
+.comments-loading__wrapper {
+  display: flex;
+  align-items: center;
+  transform: translateX(14px);
+  height: 16px;
+}
+
 .comments-loading__img {
-  transform: translateX(11px);
   width: 14px;
   height: 14px;
 }
 
 .comments-loading__item {
-  transform: translateX(16px);
+  margin-left: 6px;
   font-family: "Lato", 'Helvetica', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -2401,6 +2415,20 @@ body {
   background-color: #4592FF;
   border-radius: 5px;
   z-index: -1;
+}
+
+.comments-loading__img--rotate {
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .footer__container {
