@@ -309,4 +309,14 @@ $(document).ready(function () {
       scrollTop: 0
     }, 1500);
   });
+
+  // Scroll to comment
+  $('.comments-top__add-comment').on('click', function (e) {
+    e.preventDefault();
+    var top = $('.comments-bottom').offset().top - 115;
+    $('html, body').animate({
+      scrollTop: top
+    }, 1000);
+  });
+
 });

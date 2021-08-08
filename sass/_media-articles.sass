@@ -32,6 +32,13 @@
       &-item
         margin-bottom: 20px
 
+  .comments
+    &-loading
+      &__img
+        transform: translateX(-8px)
+      &__item
+        transform: translateX(8px)
+
 @media ( max-width: 992px )
   .navbar
     &-list
@@ -72,6 +79,14 @@
       &-item
         padding: 0
         margin-right: 7px
+
+  .comments
+    &-section
+      &__container
+        padding-left: 0
+    &-form
+      &__area
+        width: 555px
 
 @media ( max-width: 768px )
   .navbar
@@ -134,6 +149,47 @@
       &-item
         max-width: 240px
 
+  .comments
+    &-top
+      flex-direction: column
+      &__text
+        margin-bottom: 20px
+      &__title
+        font-size: 30px
+      &__counter
+        font-size: 30px
+      &__add
+        &-comment
+          font-size: 13px
+          width: fit-content
+    &-cards
+      &__item
+        &-response
+          padding-left: 40px
+      &__name
+        &-item
+          font-size: 15px
+      &__img
+        width: 55px
+        height: 55px
+      &__comment
+        font-size: 16px
+        line-height: 25px
+    &-bottom
+      &__img
+        width: 55px
+        height: 55px
+      &__title
+        margin-left: 80px
+    &-form
+      width: 80%
+      &__area
+        width: 100%
+
+  #comment-error
+    font-size: 11px
+    bottom: 31px
+
 @media ( max-width: 576px )
   .navbar
     &-hero
@@ -173,6 +229,36 @@
       &-title
         font-size: 14px
         line-height: 22px
+
+  .comments
+    &-cards
+      &__img
+        width: 45px
+        height: 45px
+      &__name
+        &-item
+          font-size: 14px
+      &__comment
+        font-size: 15px
+    &-bottom
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &__title
+        margin-top: 17px
+        margin-left: 0
+        font-size: 16px
+        float: left
+      &__img
+        margin-right: 0
+    &-form
+      margin-top: 30px
+      width: 100%
+      &::before
+        top: -6px
+        left: auto
+        right: 20px
+        transform: rotate(45deg)
 
 @media ( max-width: 480px )
   .navbar
@@ -229,6 +315,28 @@
         margin-right: 0
         margin-bottom: 50px
         max-width: 255px
+
+  .comments
+    &-top
+      &__title
+        font-size: 25px
+      &__counter
+        font-size: 25px
+    &-cards
+      &__item
+        flex-direction: column
+        &-response
+          padding-left: 25px
+      &__text
+        margin-top: 20px
+    &-bottom
+      &__title
+        font-size: 14px
+      &__img
+        display: none
+    &-form
+      &::before
+        display: none
 
 @media ( min-width: 992px )
   .navbar
