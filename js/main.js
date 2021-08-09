@@ -26,10 +26,37 @@ $(document).ready(function () {
 
   // Modal
   function openModal() {
+    var bodyWidth = $('body').width();
+
     $('.modal__overlay').addClass('modal__overlay--visible');
     $('.modal__dialog').addClass('modal__dialog--visible');
 
     $('.modal__close').removeClass('modal__close--hidden');
+
+    if ($('body').css('overflow') != 'hidden') {
+      $('body').css('overflow', 'hidden');
+    }
+
+    var bodyWidthOverflow = $('body').width();
+    var width = (bodyWidthOverflow - bodyWidth);
+    var navbarContainer = $('.navbar__hero--transform').width();
+
+    $('header').css({
+      'padding-right': width
+    });
+
+    $('.navbar__hero--transform').css({
+      'left': '0',
+      'transform': 'translateX(' + (((bodyWidth - navbarContainer) / 2)) + 'px)'
+    });
+
+    $('section').css({
+      'padding-right': width
+    });
+
+    $('footer').css({
+      'padding-right': width
+    });
   }
 
   function closeModal(event) {
@@ -37,6 +64,27 @@ $(document).ready(function () {
     $('.modal__overlay').addClass('modal__overlay--hidden');
 
     $('.modal__close').addClass('modal__close--hidden');
+
+    if ($('body').css('overflow') == 'hidden') {
+      $('body').css('overflow', 'auto');
+    }
+
+    $('header').css({
+      'padding-right': 0
+    });
+
+    $('.navbar__hero--transform').css({
+      'left': '50%',
+      'transform': 'translateX(-50%)'
+    });
+
+    $('section').css({
+      'padding-right': 0
+    });
+
+    $('footer').css({
+      'padding-right': 0
+    });
 
     setTimeout(function () {
       $('.modal__dialog').removeClass('modal__dialog--visible');
