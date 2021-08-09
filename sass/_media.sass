@@ -177,7 +177,7 @@
   .articles
     &-cards
       grid-template-columns: 1fr 1fr
-      grid-template-rows: 170px 170px 170px 170px 1fr 1fr
+      grid-template-rows: auto auto 170px 170px 1fr 1fr
       grid-template-areas: 'one one' 'one one' 'two three' 'two three' 'four tags' 'five tags' 'six seven' 'check social'
     &-social
       padding: 31px 66px 20px 66px
@@ -334,10 +334,10 @@
             display: block
     &-cards
       grid-template-columns: 1fr 1fr
-      grid-template-rows: 170px 170px 170px 170px 170px 170px auto auto auto
+      grid-template-rows: auto auto 170px 170px 170px 170px auto auto auto
       grid-template-areas: 'one one' 'one one' 'two two' 'two two' 'three tags' 'three tags' 'four five' 'six seven' 'check social'
     &-one
-      padding: 15px 0 13px 25px
+      padding: 15px 0 10px 25px
       &__top
         &-title
           margin: 66px 0 0 0
@@ -350,6 +350,7 @@
           width: 200px
           height: 205px
       &__bottom
+        margin-top: 15px
         &-title
           margin: 2px 0 0 5px
           font-size: 12px
@@ -451,7 +452,7 @@
   .articles
     &-cards
       grid-template-columns: 1fr
-      grid-template-rows: 437px 1fr 1fr auto auto auto
+      grid-template-rows: auto 1fr 1fr auto auto auto
       grid-template-areas: 'one' 'two' 'three' 'tags' 'check' 'four' 'five' 'six' 'seven' 'social'
     &-one
       &::before
