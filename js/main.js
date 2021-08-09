@@ -65,26 +65,28 @@ $(document).ready(function () {
 
     $('.modal__close').addClass('modal__close--hidden');
 
-    if ($('body').css('overflow') == 'hidden') {
-      $('body').css('overflow', 'auto');
-    }
+    setTimeout(function () {
+      if ($('body').css('overflow') == 'hidden') {
+        $('body').css('overflow', 'auto');
+      }
 
-    $('header').css({
-      'padding-right': 0
-    });
+      $('header').css({
+        'padding-right': 0
+      });
 
-    $('.navbar__hero--transform').css({
-      'left': '50%',
-      'transform': 'translateX(-50%)'
-    });
+      $('.navbar__hero--transform').css({
+        'left': '50%',
+        'transform': 'translateX(-50%)'
+      });
 
-    $('section').css({
-      'padding-right': 0
-    });
+      $('section').css({
+        'padding-right': 0
+      });
 
-    $('footer').css({
-      'padding-right': 0
-    });
+      $('footer').css({
+        'padding-right': 0
+      });
+    }, 1100);
 
     setTimeout(function () {
       $('.modal__dialog').removeClass('modal__dialog--visible');
