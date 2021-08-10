@@ -33,8 +33,24 @@ $(document).ready(function () {
 
     $('.modal__close').removeClass('modal__close--hidden');
 
-    if ($('body').css('overflow') != 'hidden') {
-      $('body').css('overflow', 'hidden');
+    if ($('.navbar-burger').attr('data-burger') == 'open') {
+      $('body').css({
+        "overflow": "auto"
+      });
+    } else if ($('.navbar-burger').attr('data-burger') == 'close') {
+      $('body').css({
+        "overflow": "hidden"
+      });
+    } else {
+      if ($('body').css("overflow") == "hidden") {
+        $('body').css({
+          "overflow": "auto"
+        });
+      } else {
+        $('body').css({
+          "overflow": "hidden"
+        });
+      }
     }
 
     var bodyWidthOverflow = $('body').width();
@@ -66,8 +82,24 @@ $(document).ready(function () {
     $('.modal__close').addClass('modal__close--hidden');
 
     setTimeout(function () {
-      if ($('body').css('overflow') == 'hidden') {
-        $('body').css('overflow', 'auto');
+      if ($('.navbar-burger').attr('data-burger') == 'open') {
+        $('body').css({
+          "overflow": "auto"
+        });
+      } else if ($('.navbar-burger').attr('data-burger') == 'close') {
+        $('body').css({
+          "overflow": "hidden"
+        });
+      } else {
+        if ($('body').css("overflow") == "hidden") {
+          $('body').css({
+            "overflow": "auto"
+          });
+        } else {
+          $('body').css({
+            "overflow": "hidden"
+          });
+        }
       }
 
       $('header').css({
